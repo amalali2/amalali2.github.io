@@ -1,1 +1,109 @@
-Hello World
+div.back {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/1281a866665923.5b1e490940071.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 98.4%;
+  width: 100%;
+
+}
+
+div.skillset {
+  background-image: url("http://www.solidbackgrounds.com/images/1920x1080/1920x1080-white-solid-color-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Abel', sans-serif;
+}
+
+div.logo {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #ffffff;
+
+}
+
+div.a {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 4px;
+
+}
+
+div.intro {
+  font-family: 'Abel', sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-left: 5rem;
+  padding-top: 15rem;
+
+}
+
+div.intro > h1 > span {
+  color: black;
+}
+
+div.description {
+  font-family: 'Abel', sans-serif;
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 5rem;
+  padding-bottom: 20rem;
+
+}
+
+div.Illustration {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  margin-left: 10rem;
+
+}
+
+div.design {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  margin-left: 12rem;
+
+}
+
+div.develop {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  margin-left: 10rem;
+
+}
+
+img.designimg {
+  height: 90%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: block;
+  margin: auto;
+}
+
+img.codeimg {
+  height: 90%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: block;
+  margin: auto;
+
+}
+
+img.drawimg {
+  height: 90%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: block;
+  margin: auto;
+
+}
