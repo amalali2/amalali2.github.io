@@ -126,7 +126,6 @@ div.body {
 
 div.body > ol {
   color: black;
-
 }
 
 ol.navbottom{
@@ -198,6 +197,7 @@ li.social {
 
 li.bodylist {
   display:flow-root;
+  color: black;
 }
 
 li.bodylist2 {
@@ -211,4 +211,34 @@ li.bodylist span {
 }
 li.bodylist2 span {
   color: #2A34E2
+}
+
+div.workbutton {
+  padding-bottom: 2rem;
+}
+
+div.workbutton {
+  margin-top: 3%;
+  color: #white;
+  background-color: #2A34E2;
+  border: 2px solid #2A34E2;
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
+  color: white;
+  padding: 2px;
+  width: 10%;
+  height: 4%;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+div.workbutton:hover {opacity: 1}
+
+div.workbutton h3 {
+  color: white;
+}
+
+div.body strong {
+  font-size: 20px;
 }
