@@ -1,22 +1,20 @@
 div.back {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/1281a866665923.5b1e490940071.png");
+  background-image: url('img/back.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 98.4%;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100%;
   width: 100%;
 
 }
 
-div.skillset {
-  background-image: url("http://www.solidbackgrounds.com/images/1920x1080/1920x1080-white-solid-color-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+div.back2 {
+  background-image: url('img/topography.png');
+  background-position: right;
+  background-attachment: fixed;
   height: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-family: 'Abel', sans-serif;
+  width: 100%;
 }
 
 div.logo {
@@ -28,19 +26,36 @@ div.logo {
 }
 
 div.a {
-  font-family: 'Abel', sans-serif;
-  font-size: 20px;
+  font-family: 'Varelo Round', sans-serif;
+  font-size: 15px;
   color: #ffffff;
   letter-spacing: 4px;
 
 }
 
+div.a2 li {
+  font-family: 'Varelo Round', sans-serif;
+  font-size: 15px;
+  color: black;
+  letter-spacing: 4px;
+
+}
+
+li.homebutton {
+  padding-right: 5px;
+}
+
+li.homebutton2 {
+  padding-right: 5px;
+}
+
 div.intro {
-  font-family: 'Abel', sans-serif;
-  font-size: 40px;
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 1px;
+  font-size: 50px;
   color: white;
-  margin-left: 5rem;
-  padding-top: 15rem;
+  margin-left: 10%;
+  padding-top: 9%;
 
 }
 
@@ -49,61 +64,170 @@ div.intro > h1 > span {
 }
 
 div.description {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 30px;
+  color: white;
+  font-size: 20px;
+  margin-left: 10%;
+  kerning:5px;
+
+}
+
+div.description2 {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 30px;
+  color: #2A34E2;
+  font-size: 20px;
+  margin-left: 10%;
+  kerning:5px;
+  padding-bottom: 16%;
+
+}
+
+div.intro2 {
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 1px;
+  font-size: 50px;
+  color: black;
+  margin-left: 10%;
+  padding-top: 15%;
+
+}
+
+div.email {
+  padding-bottom: 15rem;
+}
+
+div.email {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-bottom: 15%;
+  color: #white;
+  background-color: white; /* Remove background color */
+  border: 2px solid white; /* Border thickness, line style, and color *//* Adds curve to border corners */
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif; color: #2A34E2;
+  padding: 2px;
+  width: 10%;
+  height: 4%;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+div.email:hover {opacity: 1}
+
+
+div.contact {
   font-family: 'Abel', sans-serif;
   color: black;
+  font-size: 15px;
+}
+
+div.skillset {
+  text-align: center;
+  background-color: white;
+  background-attachment: fixed;
+  padding-top: 5%;
+  padding-bottom: 18%;
+  font-family: 'Abel', sans-serif;
+  color:  #2A34E2;
   font-size: 20px;
+
+}
+
+div.about {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Work Sans', sans-serif;
   line-height: 30px;
-  margin-left: 5rem;
-  padding-bottom: 20rem;
+  padding-top: 5%;
 
 }
 
-div.Illustration {
-  display: inline-block;
-  width: 20%;
-  height: 20%;
-  margin-left: 10rem;
+div.abouttitle {
+  font-size: 40px;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+div.abouttitle span {
+  font-size: 20px;
+  color:  #2A34E2;
+}
+
+ol.navbottom{
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
 
 }
 
-div.design {
-  display: inline-block;
-  width: 20%;
-  height: 20%;
-  margin-left: 12rem;
+ol.sns {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+footer {
+  border-style: solid;
+  background-color: #2A34E2;
+  color: #2A34E2;
+  padding: 10px;
+}
+
+div.swork {
+    margin-left: 10%;
+    font-size: 40px;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+div.swork span {
+    font-size: 20px;
+    color:  #2A34E2;
+  }
+
+img.ayoc {
+  height: 500px;
+  width: auto;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+img.ayoc:hover {opacity: 1}
 
 }
 
-div.develop {
-  display: inline-block;
-  width: 20%;
-  height: 20%;
-  margin-left: 10rem;
+img.sellogo {
+  height: 500px;
+  width: auto;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+div.works {
+  text-align: center;
+  padding-bottom: 10px;
 
 }
 
-img.designimg {
-  height: 90%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: block;
-  margin: auto;
+div.sns > ol {
+  color: white;
 }
 
-img.codeimg {
-  height: 90%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: block;
-  margin: auto;
-
+li {
+  color: white;
 }
 
-img.drawimg {
-  height: 90%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: block;
-  margin: auto;
-
+div.body {
+  padding-bottom: 9%;
 }

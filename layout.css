@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  margin: 0;
 
 }
 
@@ -10,10 +11,17 @@ li {
 }
 
 div.a {
-  float: right;
-  margin-right: 5%;
+  float: left;
+  margin-left: 8%;
 
 }
+
+div.a2 {
+  float: left;
+  margin-left: 8%;
+
+}
+
 
 div.logo {
   margin-left: 5%;
@@ -24,7 +32,11 @@ div.intro > h1 {
   margin: 0%;
 }
 
-div.design {
+div.intro2 > h1 {
+  margin: 0%;
+}
+
+/* div.design {
   text-align: center;
 }
 
@@ -34,7 +46,7 @@ div.develop {
 
 div.Illustration {
   text-align: center;
-}
+} */
 
 div.contact {
   margin-bottom: 20%;
@@ -42,15 +54,24 @@ div.contact {
 
 div.contactbutton {
   float: right;
-  margin-right: 5%;
+  margin-right: 10%;
 
 }
 
 div.pull {
   float: left;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 div.social {
-  float: left;
+  text-align: center;
+
+}
+
+div.top-nav {
+  margin: 0;
+}
+
+ol.navbottom{
+  text-align: center;
 }
