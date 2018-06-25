@@ -1,19 +1,25 @@
 body, html {
   height: 100%;
   margin: 0;
+}
 
+div.navtop {
+  float: left;
+  margin-left: 8%;
+}
+
+div.intro > h1 {
+  margin: 0%;
 }
 
 li {
   list-style: none;
   display: inline-block;
-
 }
 
-div.a {
+div.topnav {
   float: left;
   margin-left: 8%;
-
 }
 
 div.logo {
@@ -21,7 +27,7 @@ div.logo {
   padding-top: 2.5%;
 }
 
-div.intro > h1 {
+div.headline > h1 {
   margin: 0%;
 }
 
@@ -32,23 +38,12 @@ div.contact {
 div.contactbutton {
   float: right;
   margin-right: 10%;
-
-}
-
-div.pull {
-  float: left;
-  margin-left: 10%;
 }
 
 div.social {
   text-align: center;
-
 }
 
 div.top-nav {
   margin: 0;
-}
-
-ol.navbottom{
-  text-align: center;
 }
