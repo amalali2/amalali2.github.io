@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src = "index.js" ></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -10,18 +12,43 @@
   </head>
   <STYLE>A {text-decoration: none;} </STYLE>
   <body>
-    <div class = "slider">
+    <div = "page">
+    <div class = "fade">
     <div class = "back">
-    <header><div class = "logo"></div></header>
+  <header><div class = "logo"></div></header>
     <div class = "top nav">
     <nav class = "nav one">
       <ol class "navtop">
-        <div class = "a">
-        <a href="https://amalali2.github.io/index.html"><li class = "homebutton">home</li></a>
-        <a href="https://amalali2.github.io/projects.html"><li class = "contactbutton">projects</li></a>
+        <div class = "nav">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">MENU</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="https://amalali2.github.io/index.html">HOME</a>
+          <a href="https://amalali2.github.io/projects.html">PROJECTS</a>
+        </div>
       </div>
-      </ol>
-    </nav>
+      <script>
+                  function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                      }
+
+                  window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                                          }
+                                        }
+                                      }
+                                    }
+                  </script>
+                </div>
+              </ol>
+            </nav>
     <div class = "headline">
       <div class = "intro">
       <h1>I'm Amal,
@@ -34,42 +61,47 @@
         and work even better. Alongside my clients, I uncover problems and solve them. In <br>
         short, I create bolder online experiences.</p>
     </div>
-    <div class = "email">
-    <div class="svg-wrapper">
-  <svg height="40" width="220" xmlns="http://www.w3.org/2000/svg">
-    <rect class="shape" height="40" width="220" />
-  </svg>
-   <a href="mailto:435amal@gmail.com"><div class="text"><p>Lets Talk.</p></div>
-</div></a>
+    <div class = "workbutton">
+    <a href="mailto:435amal@gmail.com"><p class = "">Lets Talk.</p></a>
+  </div>
   </div>
 </div>
 </div>
 </div>
+  <!-- <div class = "fade-bg"> -->
+<div class = "container">
 <div class = "about">
   <div class = "abouttitle">
     <h2><span>/</span>About Me</h3>
   </div>
   <div class = "body">
-    <p>I am a Designer and Full-Stack Developer based Columbus, OH.
-
-      Graphic design and illustrations were my gateway to the creative industry which.
+  <div class = "bodytextcontain">
+    <p>I am a Designer and Full-Stack Developer based Columbus, OH. Graphic design and illustrations <br>
+      were my gateway to the creative industry which.
 
       <br>
       <br><strong>Web Development</strong>
       <br>
       <br>
 
-      Starting with basic HTML and CSS during my early undergrad years, I found myself eventually participating in a full-stack development apprenticeship one week out of graduation. Agile full-stack software development, intensive hands-on projects, and collaborative programming became my day to day.
-      Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.
-      Out of this interest for development, my passion for functionality and structure evolved. Jumping right into Photoshop to create something didn’t feel accurate anymore and skipping the steps of building a framework based on functionality and usability became inevitable.
+      Starting with basic HTML and CSS during my early undergrad years, I found myself eventually <br>
+      participating in a full-stack development apprenticeship one week out of graduation. Agile <br>
+      full-stack software development, intensive hands-on projects, and collaborative programming <br>
+      became my day to day. Visually appealing designs, subtle details and brand guidelines combined <br>
+      to innovative interfaces across various touch points became my daily companion. Out of this <br>
+      interest for development, my passion for functionality and structure evolved. Jumping right into <br>
+      Photoshop to create something didn’t feel accurate anymore and skipping the steps of building <br>
+       a framework based on functionality and usability became inevitable.
 
       <br>
       <br><strong>Design</strong>
       <br>
       <br>
 
-      A user-centered mindset and awareness for design turned out to be the perfect fit for me whilst creating on my own as well as when collaborating with others. This rough framework outlines my process of developing digital experiences:
-      <ol>
+      A user-centered mindset and awareness for design turned out to be the perfect fit for me whilst<br>
+      creating on my own as well as when collaborating with others. This rough framework outlines <br>
+      my process of developing digital experiences: <br>
+      <!-- <ol>
           <li class = "bodylist">1. <b>RESEARCH</b>  <span>and gather the starting point and evaluate requirements</span> </li>
           <li class = "bodylist">2. <b>STRUCTURE</b> <span> setup and content of the project</span> </li>
            <li class = "bodylist">3. <b>CONCEPT AND STRATEGY</b>  </li>
@@ -81,27 +113,33 @@
           <li class = "bodylist2"> <span> * </span>Use cases and scenarios</li>
           <li class = "bodylist2"> <span>* </span>Sketches and Infographics</li>
           <li class = "bodylist2"> <span> * </span> Wireframes</li>
-      </ol>
-      Communicating the conceptual approach/strategy and reasoning behind it, is present during the whole process.
+      </ol> -->
+      Communicating the conceptual approach/strategy and reasoning behind it, is present during the<br>
+      whole process.
     </p>
-      <div class = "workbutton">
-        <a href="https://amalali2.github.io/projects.html"><h3>My Work</h3></a>
-      </div>
-</div>
-</div>
-  <footer>
-    <div class = "buttom nav">
-      <nav class "nav two">
-        <div class = "social">
-        <ol class = "sns">
-          <a href="https://github.com/amalali2"><li class = "social">GITHUB</li></a>
-          <a href="https://www.linkedin.com/in/amal-ali2/"><li class = "social">LINKEDIN</li></a>
-          <a href = "https://dribbble.com/amal435"><li class= "social">DRIBBLE</li></a>
-        <ol>
-      </div>
-    </nav>
   </div>
-</footer>
-
+    <div class="svg-wrapper">
+  <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+    <rect class="shape" height="60" width="320" />
+  </svg>
+   <div class="text"><a href="https://amalali2.github.io/projects.html">Check out my work</a></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 </body>
+<footer>
+  <div class = "buttom nav">
+    <nav class "nav two">
+      <div class = "social">
+      <ol class = "sns">
+        <a href="https://github.com/amalali2"><li class = "social">GITHUB</li></a>
+        <a href="https://www.linkedin.com/in/amal-ali2/"><li class = "social">LINKEDIN</li></a>
+        <a href = "https://dribbble.com/amal435"><li class= "social">DRIBBLE</li></a>
+      <ol>
+    </div>
+  </nav>
+</div>
+</footer>
 </html>
