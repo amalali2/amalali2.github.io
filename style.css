@@ -1,11 +1,12 @@
 div.back {
-  background-image: url('img/back.png');
+  background-image: url('img/back2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+  padding-bottom:30%;
 
 }
 
@@ -36,7 +37,7 @@ div.intro {
   font-size: 50px;
   color: white;
   margin-left: 10%;
-  padding-top: 9%;
+  padding-top: 5%;
 
 }
 
@@ -54,7 +55,52 @@ div.description {
 
 }
 
-div.email {
+.svg-wrapper {
+  float: left;
+  height: 60px;
+  margin-left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.text {
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  text-align:
+  padding: 10px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/* div.email {
   padding-bottom: 15rem;
 }
 
@@ -75,7 +121,7 @@ div.email {
   transition: 0.3s;
 }
 
-div.email:hover {opacity: 1}
+div.email:hover {opacity: 1} */
 
 div.contact {
   font-family: 'Abel', sans-serif;
@@ -104,13 +150,17 @@ div.about {
   margin-right: 10%;
   font-family: 'Work Sans', sans-serif;
   line-height: 30px;
-  padding-top: 5%;
+  padding-top: 1%;
+  background-color: #2E2F45;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 
 }
 
 div.abouttitle {
   font-size: 40px;
-  color: black;
+  color: white;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -121,11 +171,12 @@ div.abouttitle span {
 
 div.body {
   padding-bottom: 9%;
+  color: white;
 
 }
 
 div.body > ol {
-  color: black;
+  color: white;
 }
 
 ol.navbottom{
@@ -197,7 +248,7 @@ li.social {
 
 li.bodylist {
   display:flow-root;
-  color: black;
+  color: white;
 }
 
 li.bodylist2 {
