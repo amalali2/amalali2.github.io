@@ -12,4 +12,4 @@ var opacity = 1 - diff / 300
 
 $("div.fade-bg").css("opacity", opacity)
 
-})
+});

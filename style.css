@@ -1,11 +1,11 @@
 div.abouttitle {
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: black;
   font-family: 'Work Sans', sans-serif;
 }
 
 div.abouttitle h2 {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 div.abouttitle span {
@@ -14,14 +14,14 @@ div.abouttitle span {
 }
 
 div.body span {
-  font-size: 15px;
+  font-size: 0.8vw;
   color:  #2A34E2;
 }
 
 div.body {
   padding-bottom: %;
   color: black;
-  font-size: 15px;
+  font-size: 0.8vw;
   font-family: 'Work Sans', sans-serif;
   line-height: 1.5vw;
 }
@@ -52,15 +52,20 @@ div.back {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  padding-bottom: 15%;
+  padding-bottom: 50%;
 
 }
 
 div.container {
-  float:right;
-  margin-right: 10%;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  
 }
 
 div.contact {
@@ -75,9 +80,9 @@ li.contactbutton {
 
 div.description {
   font-family: 'Work Sans', sans-serif;
-  line-height: 30px;
+  line-height: 2vw;
   color: white;
-  font-size: 15px;
+  font-size: 1vw;
   margin-left: 10%;
   kerning:5px;
 }
@@ -120,7 +125,7 @@ div.nav {
 div.intro {
   font-family: 'Crimson Text', serif;
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 2vw;
   color: white;
   margin-left: 10%;
   padding-top: 5%;
@@ -140,11 +145,10 @@ div.workbutton {
   color: #white;
   background-color: white;
   border: 2px solid white;
-  /* text-transform: uppercase; */
   font-family: 'Work Sans', sans-serif;
   color: white;
   padding: 2px;
-  width: 10%;
+  width: 20%;
   height: 4%;
   text-align: center;
   opacity: 0.6;
@@ -207,7 +211,7 @@ p.email2 {
   font-family: 'Abel', sans-serif;
   color: black;
 }
-/* div.email:hover {opacity: 1} */ */
+
 
 ol.navbottom{
   font-family: 'Abel', sans-serif;
@@ -263,7 +267,7 @@ li.homebutton {
 }
 
 .dropbtn {
-  margin-left: 100%;
+    margin-left: 6vw;
     background-color: #6065F9;
     color: white;
     font-family: 'Abel', sans-serif;
@@ -359,6 +363,33 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
+  padding-bottom: 2rem;
+}
+
+input[type=submit] {
+  margin-top: 2%;
+  margin-left: 20%;
+  color: #white;
+  background-color: white;
+  border: 2px solid white;
+  /* text-transform: uppercase; */
+  font-family: 'Work Sans', sans-serif;
+  color: #2E3044;
+  padding: 2px;
+  width: 10%;
+  height: 15%;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+input[type=submit]:hover {opacity: 1}
+
+input[type=submit]{
+  /*  */
+}
+/*
+input[type=submit] {
    margin-top: 3%;
    background-color: white;
    border: none;
@@ -372,7 +403,7 @@ input[type=submit] {
    transition: 0.3s;
  }
 
-input[type=submit]:hover {opacity: 1}
+input[type=submit]:hover {opacity: 1} */
 
 ::placeholder {
     color: white;
@@ -398,7 +429,7 @@ div.formsubtitle {
   margin-top: 0;
   padding: 0;
   color: white;
-  font-size: 15px;
+  font-size: 1vw;
   font-family: 'Work Sans', sans-serif;
-  line-height: 1.5vw;
+  line-height: 2vw;
 }
