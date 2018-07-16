@@ -1,0 +1,153 @@
+body {
+    background-color: #E6EEFE;
+}
+
+/* NAV */
+
+nav {
+    background-color: #E6EEFE;
+   
+  }
+  
+  .logo {
+    float: left;
+    vertical-align: middle;
+    font-size: 25px;
+    padding: 25px;
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  
+  nav ol {
+    display: inline;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 30px;
+    float: right; 
+    font-family: 'Work Sans', sans-serif;
+    color: #093ACF;
+    padding-top: 22px;
+    padding-right: 10px;
+  }
+  
+  nav li a {
+    padding: 15px;
+    color: #093ACF;
+  }
+
+  /* ABOUT */
+
+.title-text h2 {
+  font-family: 'Crimson Text', sans-serif;
+  margin-top: 10%;
+  margin-left: 25px;
+  font-size: 60px;
+  color: #093ACF;
+}
+
+.text-1 {
+  font-family: 'Work Sans', sans-serif;
+  margin: 25px;
+  width:calc(100% - 50px);
+  line-height: 25px;
+  color: #093ACF;
+}
+
+/* FOOTER */
+
+
+footer {
+  background-color: white;
+  border: none;
+  margin: 12px;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
+
+footer p {
+  float: left;
+  margin-top: 0px;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Work Sans', sans-serif;
+  color: #093ACF;
+}
+
+footer ol {
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+  cursor: pointer;
+  float: right; 
+
+}
+
+footer ol li img {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  /* ABOUT */
+
+  .title-text h2 {
+    font-family: 'Crimson Text', sans-serif;
+    margin-top: 20%;
+    margin-left: 25px;
+    font-size: 60px;
+    color: #093ACF;
+  }
+
+  .text-1 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 25px;
+    width:calc(100% - 50px);
+    line-height: 25px;
+    color: #093ACF;
+  }
+
+/* FOOTER */
+
+
+footer {
+    background-color: white;
+    border: none;
+    margin: 12px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+  
+  footer p {
+    float: left;
+    margin-top: 0px;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: #093ACF;
+  }
+  
+  footer ol {
+    list-style: none;
+  }
+  
+  footer li {
+    display: inline-block;
+    cursor: pointer;
+    float: right; 
+  
+  }
+  
+  footer ol li img {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 10px;
+  }
+
+}
