@@ -42,6 +42,10 @@ nav li a {
 
 /* INDEX */
 
+.index-border {
+  display: none;
+}
+
 .index-banner {
   width:100%;
   height: 100vh;
