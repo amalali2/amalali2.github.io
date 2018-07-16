@@ -4,44 +4,12 @@ body {
   margin: 0;
 }
 
-/* NAV */
-
-nav {
-  background-color: #093ACF;
-}
-
-.logo {
-  float: left;
-  vertical-align: middle;
-  font-size: 25px;
-  padding: 25px;
-  padding-top: 20px;
-  padding-left: 25px;
-}
-
-nav ol {
-  display: inline;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  cursor: pointer;
-  padding: 30px;
-  float: right; 
-  font-family: 'Work Sans', sans-serif;
-  color: #093ACF;
-  padding-top: 22px;
-  padding-right: 10px;
-}
-
-nav li a {
-  padding: 15px;
-  color: white;
-}
-
-
 /* INDEX */
+
+.topnav{
+  background-color:  #2D3DDE;
+  
+}
 
 .index-border {
   display: none;
@@ -68,7 +36,7 @@ nav li a {
   font-family: 'Crimson Text', serif;
   font-weight: 500;
   font-size: 5vw;
-  margin-left: 10%;
+  margin-left: 80px;
   color: white;
   margin-bottom: 5px;
   margin-top: 20%;
@@ -79,7 +47,7 @@ nav li a {
   font-weight: 100;
   font-size: 1.5vw;
   color:white;
-  margin-left: 10%;
+  margin-left: 80px;
   margin-top: 0px;
   
 }  
@@ -184,6 +152,14 @@ a:visited {
 
 @media screen and (max-width: 700px) {
 
+  .topnav{
+    background-color:  white;
+    
+  }
+  .index-border {
+    display: block
+  }
+
 /* INDEX */
 
  .index-banner {
@@ -226,14 +202,14 @@ a:visited {
 }
 
 .skill-box {
-  margin: 25px;
-  width:calc(100% - 50px);
+  
+  width:calc(100% - 55px);
   height:300px;
   text-align: center;
   font-family: 'Work Sans', sans-serif; 
   color: #093ACF;
   border-color: transparent;
-  line-height: 40px;
+  
   border-style: solid;
   
 }
