@@ -37,8 +37,9 @@ nav li {
 
 nav li a {
   padding: 15px;
-  color: #093ACF;
+  color: white;
 }
+
 
 /* INDEX */
 
@@ -47,13 +48,13 @@ nav li a {
 }
 
 .index-banner {
+  
   width:100%;
   height: 100vh;
   background-image: url('img/landing.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-  display: table;
+  background-color:  #093ACF;
   
 }
 
@@ -70,7 +71,7 @@ nav li a {
   margin-left: 10%;
   color: white;
   margin-bottom: 5px;
-  margin-top: 10%;
+  margin-top: 20%;
 }
     
 .index-banner p {
@@ -219,21 +220,15 @@ a:visited {
 
 /* SKILLS */
 
-*{
-  background-color: #FFFFFF;
-}
-
 .title{
   font-family: 'Work Sans', sans-serif; 
   margin: 25px;
 }
 
-
 .skill-box {
   margin: 25px;
   width:calc(100% - 50px);
   height:300px;
-  background-color:white;
   text-align: center;
   font-family: 'Work Sans', sans-serif; 
   color: #093ACF;
