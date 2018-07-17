@@ -71,6 +71,17 @@ footer ol li img {
   padding: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  
+  nav {
+    margin-top: 2%;
+  }
+
+  footer {
+    margin-top: 430px;
+  }
+}
+
 @media screen and (max-width: 950px) {
   
   nav {

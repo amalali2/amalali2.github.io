@@ -119,10 +119,13 @@ a:visited {
 
 
 @media screen and (max-width: 1200px) {
+  nav {
+    margin-top: 2%;
+  }
 
   .index-banner {
     width:100%;
-    height: 80vh;
+    height: 95vh;
     background-image: url('/img/landing.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,7 +147,7 @@ a:visited {
     margin-left: 10%;
     color: white;
     margin-bottom: 5px;
-    margin-top: 10%;
+    margin-top: 15%;
   }
       
   .index-banner p {
@@ -161,6 +164,34 @@ a:visited {
     color: black;
   }
 
+  /* SKILLS */
+
+.contain-box {
+  margin-bottom: 2%;
+}
+
+.skill-content {
+  font-size: 11px;
+}
+
+.skill-box {
+  margin: 10px;
+  width:calc(31% - 40px);
+  height: 235px;; 
+}
+ .skill-br {
+   display: none;
+ }
+
+ .skill-content h2 {
+  margin-top: 23px;
+  font-size: 16px;
+  margin-bottom: 6px;
+ }
+
+ .skill-content p {
+   margin-top: 2px;
+ }
 
 }
 
@@ -226,18 +257,22 @@ a:visited {
   color: #093ACF;
   border-color: transparent;
   
-  border-style: solid;
-  
 }
 
 .skill-content {
   padding: 15px;
 }
 
+..skill-content p {
+
+}
+
 a h2{
   text-decoration: underline;
   color:#093ACF;
-  line-height: 35px;
+  line-height: 45px;
+  font-size: 2rem;
+  margin-bottom: 1%;
 }
 
 a:visited {
