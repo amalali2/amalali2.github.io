@@ -1,6 +1,9 @@
 body {
     background-color: #E6EEFE;
 }
+.title-text a {
+  text-decoration: underline;
+}
 
 /* NAV */
 
@@ -8,38 +11,8 @@ nav {
     background-color: #E6EEFE;
    
   }
-  
-  .logo {
-    float: left;
-    vertical-align: middle;
-    font-size: 25px;
-    padding: 25px;
-    padding-top: 20px;
-    padding-left: 25px;
-  }
-  
-  nav ol {
-    display: inline;
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    cursor: pointer;
-    padding: 30px;
-    float: right; 
-    font-family: 'Work Sans', sans-serif;
-    color: #093ACF;
-    padding-top: 22px;
-    padding-right: 10px;
-  }
-  
-  nav li a {
-    padding: 15px;
-    color: #093ACF;
-  }
 
-  /* ABOUT */
+/* ABOUT */
 
 .title-text h2 {
   font-family: 'Crimson Text', sans-serif;
@@ -47,14 +20,17 @@ nav {
   margin-left: 25px;
   font-size: 60px;
   color: #093ACF;
+  margin-left: 80px;
 }
 
 .text-1 {
   font-family: 'Work Sans', sans-serif;
   margin: 25px;
-  width:calc(100% - 50px);
+  width:calc(91% - 50px);
   line-height: 25px;
   color: #093ACF;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 /* FOOTER */
@@ -95,11 +71,18 @@ footer ol li img {
 }
 
 @media screen and (max-width: 950px) {
-  /* ABOUT */
+  
+  nav {
+    background-color: #E6EEFE;
+   
+  }
+  
+  
+/* ABOUT */
 
   .title-text h2 {
     font-family: 'Crimson Text', sans-serif;
-    margin-top: 20%;
+    margin-top: 25%;
     margin-left: 25px;
     font-size: 60px;
     color: #093ACF;

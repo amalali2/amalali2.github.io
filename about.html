@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="shared.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700|Inconsolata" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -9,14 +10,15 @@
   </head>
 <STYLE>A {text-decoration: none;} </STYLE>
 <body>
-    <nav>
-   <a href="index.html" class="logo">👋</a>
-    <ol>
-      <li>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-      </li>
-    </ol>
+<nav>
+   <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">👋</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
 </nav>
    <div class = "title-text">
         <h2>About Me</h2>
@@ -45,9 +47,9 @@
           creating on my own as well as when collaborating with others. This rough framework outlines
           my process of developing digital experiences:
           <ol>
-              <li class = "bodylist2"> RESEARCH and gather the starting point and evaluate requirements</span> </li>
-              <li class = "bodylist2"> STRUCTUREsetup and content of the project </li>
-              <li class = "bodylist2"> CONCEPT AND STRATEGY </li>
+              <li class = "bodylist2"> RESEARCH and gather the starting point and evaluate requirements</span> </li>
+              <li class = "bodylist2"> STRUCTUREsetup and content of the project </li>
+              <li class = "bodylist2"> CONCEPT AND STRATEGY </li>
               <li class = "bodylist2"> CREATE, evaluate and iterate deliverables such as </span></li>
 
           </ol>
@@ -66,5 +68,6 @@
           </li>
         </ol>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

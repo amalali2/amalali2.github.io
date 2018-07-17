@@ -11,13 +11,14 @@
     <STYLE>A {text-decoration: none;} </STYLE>
 <body>
 <nav>
-    <a href="index.html" class="logo">👋</a>
-    <ol>
-      <li>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-      </li>
-    </ol>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">👋</button>
+              <div id="myDropdown" class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+      </div>
 </nav>
 <div class = "form-banner">
       <div class = "form-contain">
@@ -43,5 +44,6 @@
       </li>
     </ol>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
