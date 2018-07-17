@@ -77,13 +77,16 @@ footer ol li img {
     background-color: #E6EEFE;
    
   }
-  
-  
+
+  .dropbtn {
+    background-color: #E6EEFE;
+  }
+
 /* ABOUT */
 
   .title-text h2 {
     font-family: 'Crimson Text', sans-serif;
-    margin-top: 25%;
+    margin-top: 12%;
     margin-left: 25px;
     font-size: 60px;
     color: #093ACF;
