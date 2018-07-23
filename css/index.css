@@ -468,7 +468,7 @@ ul li a:hover + img {
     display: block;
     font-family: 'Crimson Text', serif;
     font-weight: 500;
-    font-size: 15vw;
+    font-size: 12vw;
     margin-left: 5%;
     margin-right: 5%;
     color: white;
@@ -480,7 +480,7 @@ ul li a:hover + img {
   .index-banner p {
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
-    font-size: 4vw;
+    font-size: 3.9vw;
     color: white;
     margin-left: 5%;
     margin-top: 2%;
