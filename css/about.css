@@ -31,8 +31,18 @@ nav {
   color: #093ACF;
   margin-left: 80px;
   margin-right: 80px;
-  margin-bottom: 5%;
 }
+.text-2 {
+  font-family: 'Work Sans', sans-serif;
+  margin: 25px;
+  width:calc(91% - 50px);
+  line-height: 25px;
+  color: #093ACF;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 8%;
+}
+
 
 /* FOOTER */
 
@@ -43,6 +53,7 @@ footer {
   margin: 12px;
   margin-top: 45px;
   margin-bottom: 55px;
+  margin-left: 2.8%;
 }
 
 footer p {
@@ -54,16 +65,6 @@ footer p {
   color: #093ACF;
 }
 
-footer ol {
-  list-style: none;
-}
-
-footer li {
-  display: inline-block;
-  cursor: pointer;
-  float: right; 
-
-}
 
 footer ol li img {
   padding-top: 0px;
@@ -111,6 +112,15 @@ footer ol li img {
     color: #093ACF;
   }
 
+  .text-2 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 25px;
+    width:calc(100% - 50px);
+    line-height: 25px;
+    color: #093ACF;
+  }
+
+
 /* FOOTER */
 
 
@@ -120,6 +130,7 @@ footer {
     margin: 12px;
     margin-top: 55px;
     margin-bottom: 55px;
+   
   }
   
   footer p {
@@ -129,6 +140,7 @@ footer {
     padding: 10px;
     font-family: 'Work Sans', sans-serif;
     color: #093ACF;
+   
   }
   
   footer ol {

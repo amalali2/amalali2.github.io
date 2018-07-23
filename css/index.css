@@ -2,13 +2,31 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  list-style: none;
+  background: black;
 }
 
 /* INDEX */
 
+.projects-2 {
+  display: none;
+}
+
 nav {
   background: transparent;
   position: absolute;
+}
+
+.topnav ol {
+  float: right;
+  list-style: none;
+  margin-top: 2%;
+  margin-left: 873px;
+}
+
+.topnav ol li {
+  display: inline;
+  margin: 15px;
 }
 
 
@@ -23,7 +41,7 @@ nav {
    background-position: left;
    background-attachment: fixed;
    height: 100vh;
-   width: 100%;
+   width: 100vw;
 
 }
 
@@ -36,18 +54,18 @@ nav {
   display: block;
   font-family: 'Crimson Text', serif;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: 4vw;
   margin-left: 125px;
   color: white;
   margin-bottom: 5px;
-  margin-top: 24%;
+  margin-top: 30%;
 
 }
     
 .index-banner p {
   font-family: 'Work Sans', sans-serif;
   font-weight: 100;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   color:white;
   margin-left: 125px;
   
@@ -57,161 +75,366 @@ nav {
   color: black;
 }
 
-/* SKILLS */
-
-.title{
-  font-family: 'Work Sans', sans-serif; 
-  margin: 25px;
+.button {
+  margin-left: 90px;
+  display: block;
+  margin-left: 103px;
 }
 
-.contain-box {
- margin-left: 9%;
-}
-
-.skill-box {
-  margin: 25px;
-  width:calc(30% - 50px);
-  height:280px;
-  background-color:white;
+.learn {
+  margin: 2%;
+  background-color: white;
+  border: solid;
+  border-color: #FFFFFF;
+  color: #2D3DDE;
+  padding: 16px 32px;
   text-align: center;
-  font-family: 'Work Sans', sans-serif; 
-  color: #093ACF;
-  border-color: transparent;
-  border-style: solid;
-  display: inline-flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 2%;
+  font-family: 'Work Sans';
+  
+}
+
+.git {
+  background-color: transparent;
+  border: solid;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 2%;
+  font-family: 'Work Sans';
   
 }
 
 
-/* WORKS */
+.learn:hover {opacity: 1}
 
-.projects {
-  margin-top: 3%;
-  margin-bottom: 5%;
+.git:hover {background-color: white;
+color: #2D3DDE;
 }
 
-.title {
-  margin-left: 80px;
+/* WORKS TEXT */
+
+
+.sw {
+  margin-top: 143px;
+  margin-bottom: 0px;
+  color: white;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  
 }
 
-a h2{
-  text-decoration: underline;
-  color:#093ACF;
-  line-height: 35px;
-  font-size: 1.8rem;
+.sw h2 {
+  font-family: 'Crimson Text';
+  font-size: 5.5vw;
+  margin-bottom: 0px;
 }
 
-.project-box p {
-  font-size: 1.2rem;
+.sw p {
+  font-family: 'Work Sans';
+  font-size: 1.4vw;
+  text-align: center;
+  line-height: 30px;
 }
 
-a:visited {
-  text-decoration: underline;
-  color: black;
+
+
+/* PROJECTS */
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  
+  
 }
 
-.project-box {
-  margin-left: 80px;
+ul {
+  margin:0;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  
+} 
+
+ul li {
+  list-style: none;
+  width: 290px;
   font-family: 'Work Sans', sans-serif; 
-  font-size: 15px;
+  font-size: 1.2vw;
  
 }
 
+ul li a p {
+  line-height: 138%;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  margin-top: 31.5%; 
+  color: white;
+  
+} 
 
-@media screen and (max-width: 1200px) {
-  nav {
-    margin-top: 2%;
+ul li a p:hover {
+  text-decoration:line-through;
+}
+
+.modal img {
+  position: absolute;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;;
+  z-index: -1;
+}
+
+ul li a:hover + img {
+  opacity: 1;
+  animation: animate 20s linear infinite;
+  transform: scale(1.5);
+  transition: transform 15s;
+}
+
+
+@media (max-width: 900px ) {
+
+  body {
+    background-color: #FFFFFF;
+  }
+
+  .projects-2 {
+    display: inline;
+  }
+  
+  .title {
+    margin: auto;
+    width: 95%;
+    font-size: 1.3rem;
+    font-family: 'Work Sans', sans-serif; 
+    margin-top: 20px;
+  }
+  
+  a h2{
+    text-decoration: underline;
+    color:#093ACF;
+    line-height: 35px;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .project-box-2 p {
+    font-size: 1.2rem;
+    margin-top: 0px;
+  }
+  .project-box-2 h2 {
+    margin-bottom: 8px;
+
+  }
+  a:visited {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .project-box-2 {
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 15px;
+    margin: auto;
+    width: 95%;
+  }
+  
+  .ul {
+    display: none;
+  }
+
+  .topnav ol {
+    display: none;
+  }
+  .modal { 
+    display: none;
   }
 
   .index-banner {
-    width:100%;
-    height: 95vh;
-    background-image: url('/img/landing.png');
-    background-size: cover;
+    background-image: url('/img/landing-b.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: right;
-    display: table;
+    height: 100vh;
+    width: 100%;
     
-  }
-  
-  .vertical-center {
-    display: table-cell;
-    vertical-align: text-top;
-  }
-  
-  .index-banner h1 {
-    display: block;
-    font-family: 'Crimson Text', serif;
-    font-weight: 500;
-    font-size: 6vw;
-    margin-left: 10%;
-    color: white;
-    margin-bottom: 5px;
-    margin-top: 15%;
-  }
+    } 
+
+    .index-banner h1 {
+      display: block;
+      font-family: 'Crimson Text', serif;
+      font-weight: 500;
+      font-size: 7vw;
+      margin-left: 10%;
+      color: white;
+      margin-bottom: 5px;
+      margin-top: 35%;
+    }
+        
+    .index-banner p {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 100;
+      font-size: 2.5vw;
+      color:white;
+      margin-left: 10%;
+      margin-top: 0px;
       
-  .index-banner p {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 100;
-    font-size: 2vw;
-    color:white;
-    margin-left: 10%;
-    margin-top: 0px;
+    }  
     
-  }  
+    .index-banner span {
+      color: black;
+    }
+
+    .button {
+      display: block;
+    }
+
+    .topnav ol {
+      float: right;
+      list-style: none;
+      margin-top: 1.6%;
+      margin-left: 1473px;
+
+    }
   
-  .index-banner span {
+}
+
+@media screen and (max-width: 1050px) {
+  
+  .projects-2 {
+    display: inline;
+  }
+  
+  .title {
+    margin: auto;
+    width: 95%;
+    font-size: 1.3rem;
+    font-family: 'Work Sans', sans-serif; 
+    margin-top: 20px;
+  }
+  
+  a h2{
+    text-decoration: underline;
+    color:#093ACF;
+    line-height: 35px;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .project-box-2 p {
+    font-size: 1.2rem;
+    margin-top: 0px;
+  }
+  .project-box-2 h2 {
+    margin-bottom: 8px;
+
+  }
+  a:visited {
+    text-decoration: underline;
     color: black;
   }
+  
+  .project-box-2 {
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 15px;
+    margin: auto;
+    width: 95%;
+  }
 
-  /* SKILLS */
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+  }
 
-.contain-box {
-  margin-bottom: 2%;
-}
+  .modal {
+    display: none;
+  }
 
-.skill-content {
-  font-size: 11px;
-}
+  .ul {
+    display: none;
+  }
 
-.skill-box {
-  margin: 10px;
-  width:calc(31% - 40px);
-  height: 235px;; 
-}
- .skill-br {
-   display: none;
- }
+  .topnav ol {
+    display: none;
+  }
 
- .skill-content h2 {
-  margin-top: 23px;
-  font-size: 16px;
-  margin-bottom: 6px;
- }
-
- .skill-content p {
-   margin-top: 2px;
- }
-
-}
-
-
-@media screen and (max-width: 700px) {
-
-  nav{
-    background-color:  white;
+  .button {
+    display: inline-block;
+    margin-left: 0px;
     
   }
-  .index-border {
-    display: block
+
+  .learn {
+    background-color: white;
+    border: solid;
+    border-color: #FFFFFF;
+    color: #2D3DDE;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 2vh;
+    margin: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Work Sans';
+    opacity: 1;
+    width: 30vw;
+    height: 6vh;
+    margin-top: 1.5%;
+    margin-left: 10%;
   }
+  
+  .git {
+    background-color: transparent;
+    border: solid;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 2vh;
+    margin: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Work Sans';
+    width: 30vw;
+    height: 6vh;
+    margin-left: 10%;
+  }
+  
+  .learn:hover {display: none;}
 
 /* INDEX */
 
  .index-banner {
-    width:100%; 
-    height: 55vh;
-    background: #FFFFFF;
+  background-image: url('/img/landing-b.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
   
   } 
 
@@ -219,108 +442,94 @@ a:visited {
     display: block;
     font-family: 'Crimson Text', serif;
     font-weight: 500;
-    font-size: 10vw;
-    margin-left: 5%;
-    color: #093ACF;
+    font-size: 7vw;
+    margin-left: 8%;
+    width: 650px;;
+    color: white;
     margin-bottom: 1%;
     margin-top: 25%;
   }
   .index-banner p {
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
+    font-size: 2vw;
+    color: white;
+    margin-left: 8%;
+    margin-top: 2%;
+    line-height: 130%;
+   
+  } 
+  
+} 
+
+@media screen and (max-width: 550px) {
+
+  .index-banner h1 {
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-weight: 500;
+    font-size: 15vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    margin-bottom: 1%;
+    margin-top: 29%;
+    width: 400px;
+    
+  }
+  .index-banner p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
     font-size: 4vw;
-    color: #093ACF;
+    color: white;
     margin-left: 5%;
     margin-top: 2%;
     line-height: 130%;
-    margin-bottom: 20%;
+   
   } 
 
-  .index-banner a p{
+  .learn {
+    background-color: white;
+    border: solid;
+    border-color: #FFFFFF;
+    color: #2D3DDE;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Work Sans';
+    opacity: 1;
+    width: 90vw;
+    height: 57px;
+    margin-top: 1.5%;
     margin-left: 5%;
-    text-decoration: underline;
+  }
+  
+  .git {
+    background-color: transparent;
+    border: solid;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Work Sans';
+    width: 90vw;
+    margin-left: 5%;
+    height: 57px;
   }
 
-/* SKILLS */
-
-.title{
-  font-family: 'Work Sans', sans-serif; 
-  margin: 25px;
-}
-
-.skill-box {
-  margin: 4.5px;
-  width:calc(100% - 55px);
-  height:300px;
-  text-align: center;
-  font-family: 'Work Sans', sans-serif; 
-  color: #093ACF;
-  border-color: transparent;
-  
-}
-
-.skill-content {
-  padding: 15px;
-}
-
-..skill-content p {
+  .button {
+    display: inline-block;
+    margin-left: 0px;
+    
+  }
 
 }
 
-a h2{
-  text-decoration: underline;
-  color:#093ACF;
-  line-height: 45px;
-  font-size: 2rem;
-  margin-bottom: 1%;
-}
 
-a:visited {
-  text-decoration: underline;
-  color: black;
-}
 
-.project-box {
-  margin-left: 5%;
-  font-family: 'Work Sans', sans-serif; 
-  font-size: 15px;
-
-}
-
-}
-
-/* FOOTER */
-
-footer {
-  background-color: white;
-  border: none;
-  margin: 12px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-footer p {
-  float: left;
-  margin-top: 0px;
-  margin: 0;
-  padding: 10px;
-  font-family: 'Work Sans', sans-serif;
-  color: #093ACF;
-}
-
-footer ol {
-  list-style: none;
-}
-
-footer li {
-  display: inline-block;
-  cursor: pointer;
-  float: right; 
-
-}
-
-footer ol li img {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding: 10px;
-}

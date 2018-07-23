@@ -129,7 +129,9 @@ nav {
 footer {
   background-color: white;
   border: none;
-  margin-top: 50px;
+  margin: 12px;
+  margin-left: 2.9%;
+  margin-top: 185px;
 }
 
 footer p {
@@ -141,22 +143,6 @@ footer p {
   color: white;
 }
 
-footer ol {
-  list-style: none;
-}
-
-footer li {
-  display: inline-block;
-  cursor: pointer;
-  float: right; 
-
-}
-
-footer ol li img {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding: 10px;
-}
 
 @media screen and (max-width: 1200px) {
   nav {
