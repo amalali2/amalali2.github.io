@@ -217,7 +217,7 @@ ul li a:hover + img {
 @media (max-width: 900px ) {
 
   body {
-    background-color: #FFFFFF;
+    background-color: black;
   }
 
   .projects-2 {
@@ -322,29 +322,55 @@ ul li a:hover + img {
 
 @media screen and (max-width: 1050px) {
   
+  .projects-2-text {
+    background: black;
+    height: 160px;
+    padding: 40px;
+  }
+
   .projects-2 {
     display: inline;
+    margin: 0;
   }
   
   .title {
     margin: auto;
     width: 95%;
-    font-size: 1.3rem;
+    font-size: 5vh;
+    font-family: 'Crimson Text', serif; 
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  span {
+    font-size: 1rem;
+    color: #2D3DDE;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin: auto;
+    width: 95%;
+    color: white;
+    margin-top: 4px;
     font-family: 'Work Sans', sans-serif; 
-    margin-top: 20px;
+    text-align: center;
+    
   }
   
   a h2{
     text-decoration: underline;
-    color:#093ACF;
+    color: #2D3DDE;
     line-height: 35px;
-    font-size: 1.8rem;
+    font-size: 3.2vh;
     margin-bottom: 8px;
+
   }
   
   .project-box-2 p {
     font-size: 1.2rem;
     margin-top: 0px;
+    
   }
   .project-box-2 h2 {
     margin-bottom: 8px;
@@ -352,7 +378,7 @@ ul li a:hover + img {
   }
   a:visited {
     text-decoration: underline;
-    color: black;
+    color: #2D3DDE;
   }
   
   .project-box-2 {
@@ -528,6 +554,8 @@ ul li a:hover + img {
     margin-left: 0px;
     
   }
+
+  .learn:hover {display: none;}
 
 }
 
