@@ -6,6 +6,7 @@ body {
   background: black;
 }
 
+
 /* INDEX */
 
 .projects-2 {
@@ -15,6 +16,8 @@ body {
 nav {
   background: transparent;
   position: absolute;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
 .topnav ol {
@@ -220,6 +223,8 @@ ul li a:hover + img {
     background-color: black;
   }
 
+  
+
   .projects-2 {
     display: inline;
   }
@@ -322,6 +327,19 @@ ul li a:hover + img {
 
 @media screen and (max-width: 1050px) {
   
+  .index-banner span {
+  
+    color: white;
+  }
+
+  nav {
+    background: transparent;
+    position: absolute;
+    margin-left: -5%;
+    margin-top: 4%;
+  }
+
+
   .projects-2-text {
     background: black;
     height: 160px;
@@ -490,11 +508,18 @@ ul li a:hover + img {
 
 @media screen and (max-width: 550px) {
 
+  nav {
+    background: transparent;
+    position: absolute;
+    margin-left: -4%;
+    margin-top: 4%;
+  }
+  
   .index-banner h1 {
     display: block;
     font-family: 'Crimson Text', serif;
     font-weight: 500;
-    font-size: 12vw;
+    font-size: 13vw;
     margin-left: 5%;
     margin-right: 5%;
     color: white;
@@ -513,6 +538,11 @@ ul li a:hover + img {
     line-height: 130%;
    
   } 
+
+  .index-banner span {
+  
+    color: white;
+  }
 
   .learn {
     background-color: white;
