@@ -403,7 +403,8 @@ ul li a:hover + img {
     font-family: 'Work Sans', sans-serif; 
     font-size: 15px;
     margin: auto;
-    width: 95%;
+    width: 90%;
+    text-align: center;
   }
 
   body {
