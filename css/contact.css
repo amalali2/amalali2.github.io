@@ -9,6 +9,10 @@ nav {
     background-color: #2A34E2;
    
   }
+
+  .dropbtn {
+    color: white;
+  }
   
   .logo {
     float: left;
@@ -145,20 +149,121 @@ footer p {
 
 
 @media screen and (max-width: 1200px) {
-  nav {
-    margin-top: 2%;
+
+nav {
+  margin-left: -10%;
+}
+
+
+/* CONTACT */
+
+input {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  
+}
+
+input[type=email] {
+    border-style: solid;
+    border-color: white;
+    background: transparent;
+    font-size: 20px;
+    margin: 20px;
+    width:calc(100% - 50px);
+    height:50px;
+    text-indent: 6px;
+   
+}
+
+
+input[type=text] {
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: white;
+  background: transparent;
+  font-size: 20px;
+  margin: 20px;
+  width:calc(100% - 50px);
+  height:350px;
+  text-indent: 6px;
+  top: 40px;
+}
+
+input[type=submit] {
+  padding-bottom: 2rem;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: white;
+  border: 2px solid white;
+  font-family: 'Work Sans', sans-serif;
+  color: #2A34E2;
+  padding: 2px;
+  width:calc(30% - 10px);
+  height:50px;
+  text-align: center;
+  margin: 20px;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {opacity: 1}
+
+::placeholder {
+    color: white;
+    right: 10px;
+}
+
+.formtitle > h2 {
+  margin-top: 12%;
+  margin-left: 25px;
+  font-size: 60px;
+  color: white;
+  font-family: 'Crimson Text', serif;
+}
+
+div.formtitle p {
+  margin: 25px;
+  font-size: 19px;
+  line-height: 25px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}   
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    border: none;
   }
-  footer {
-    margin-top: 250px;
+  
+  footer p {
+    float: left;
+    margin-top: 0px;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+  }
+  
+  footer ol {
+    list-style: none;
+  }
+  
+  footer li {
+    display: inline-block;
+    cursor: pointer;
+    float: right; 
+  
+  }
+  
+  footer ol li img {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 10px;
   }
 
-  input[type=email] {
-    height:70px;
-  }
-
-  input[type=text] {
-    height:550px;
-  }
 }
 
 
@@ -215,7 +320,7 @@ input[type=email] {
     border-color: white;
     background: transparent;
     font-size: 20px;
-    margin: 25px;
+    margin: 20px;
     width:calc(100% - 50px);
     height:50px;
     text-indent: 6px;
@@ -229,7 +334,7 @@ input[type=text] {
   border-color: white;
   background: transparent;
   font-size: 20px;
-  margin: 25px;
+  margin: 20px;
   width:calc(100% - 50px);
   height:250px;
   text-indent: 6px;
@@ -250,7 +355,7 @@ input[type=submit] {
   width:calc(30% - 10px);
   height:50px;
   text-align: center;
-  margin: 25px;
+  margin: 20px;
   font-size: 15px;
 }
 
