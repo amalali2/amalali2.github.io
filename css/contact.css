@@ -7,7 +7,7 @@ body {
 
 nav {
     background-color: #2A34E2;
-   
+    margin-left: -1%;
   }
 
   .dropbtn {
@@ -77,7 +77,7 @@ nav {
     background: transparent;
     font-size: 20px;
     margin: 25px;
-     width:calc(90% - 50px);
+    width:calc(90% - 50px);
     height:250px;
     text-indent: 6px;
     top: 40px;
@@ -109,6 +109,8 @@ nav {
   ::placeholder {
       color: white;
       right: 10px;
+      top: 0px;
+      height: 150px;
   }
   
   .formtitle > h2 {
@@ -134,7 +136,7 @@ footer {
   background-color: white;
   border: none;
   margin: 12px;
-  margin-left: 2.9%;
+  margin-left: 5.9%;
   margin-top: 185px;
 }
 
@@ -151,7 +153,7 @@ footer p {
 @media screen and (max-width: 1200px) {
 
 nav {
-  margin-left: -10%;
+  margin-left: -7%;
 }
 
 
@@ -236,6 +238,9 @@ div.formtitle p {
 footer {
     background-color: white;
     border: none;
+    margin: 12px;
+    margin-top: 55px;
+    margin-bottom: 55px;
   }
   
   footer p {

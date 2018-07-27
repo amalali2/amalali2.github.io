@@ -10,6 +10,8 @@ body {
 nav {
     background-color: #E6EEFE;
     color: #093ACF;
+    margin-left: -1%;
+    
   }
 
 .dropbtn {
@@ -57,7 +59,7 @@ footer {
   margin: 12px;
   margin-top: 45px;
   margin-bottom: 55px;
-  margin-left: 2.8%;
+  margin-left: 5.9%;
 }
 
 footer p {
@@ -80,7 +82,7 @@ footer ol li img {
   
   nav {
     margin-top: 2%;
-    margin-left: -10%;
+    margin-left: -7%;
   }
 
   footer {
