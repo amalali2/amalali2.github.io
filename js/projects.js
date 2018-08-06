@@ -6,8 +6,7 @@
 
 //we add the .visible class onto 
 
-$('.project-box a').hover(function() {
-
+$('.navigation-link a').hover(function() {
 
     // this refers to the current link we've just hovered
     var link = $(this)

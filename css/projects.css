@@ -1,0 +1,55 @@
+body {
+    text-decoration: none;
+    font-size: 4rem;
+    line-height: 300%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;   
+}
+
+.menu {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+
+}
+
+ol, ul {
+    list-style: none;
+  
+}
+
+.overlay-bg-ayoc {
+    background-image: url(/img/ayoc-mu.png);
+}
+
+.overlay-bg-slack {
+    background-image: url(/img/slack-mu.png);
+}
+
+.overlay-bg-halal {
+    background-image: url(/img/moonlight-mu.png);
+}
+
+.overlay-bg {
+    z-index: 1;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.overlay-bg .visible {
+    opacity: 1;
+}
