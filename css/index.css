@@ -6,13 +6,6 @@ body {
   background: black;
 }
 
-footer p {
-  text-align: center;
-  margin-top: 35px; 
-  font-family: 'Work Sans', sans-serif;
-  color: white;
-}
-
 /* INDEX */
 
 .dropbtn {
@@ -160,7 +153,7 @@ color: #2D3DDE;
 ul {
   margin:0;
   display: flex;
-  width: 40%;
+  width: 42%;
   margin: auto;
   
 } 
@@ -209,11 +202,22 @@ ul li a:hover + img {
   transition: transform 15s;
 }
 
+footer {
+  display: none;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 35px; 
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+}
+
 
 @media (max-width: 900px ) {
 
-  footer p {
-    color: black;
+  footer {
+    display: inline;
   }
 
   body {
@@ -322,8 +326,9 @@ ul li a:hover + img {
 }
 
 @media screen and (max-width: 1050px) {
+
   footer {
-    color: black;
+    display: inline;
   }
   
   .index-banner span {
@@ -514,7 +519,7 @@ ul li a:hover + img {
 @media screen and (max-width: 550px) {
 
   footer {
-    color: black;
+    display: inline;
   }
 
   nav {
