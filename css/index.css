@@ -26,25 +26,8 @@ footer p {
 nav {
   background: transparent;
   position: absolute;
-  margin-left: 2%;
-  margin-top: 2%;
-}
-
-.topnav ol {
-  float: right;
-  list-style: none;
-  margin-top: 2%;
-  margin-left: 873px;
-}
-
-.topnav ol li {
-  display: inline;
-  margin: 15px;
-}
-
-
-.index-border {
-  display: none;
+  
+  margin-top: 1%;
 }
 
 .index-banner {
@@ -68,7 +51,7 @@ nav {
   font-family: 'Crimson Text', serif;
   font-weight: 500;
   font-size: 4vw;
-  margin-left: 125px;
+  margin-left: 105px;
   color: white;
   margin-bottom: 5px;
   margin-top: 30%;
@@ -80,7 +63,7 @@ nav {
   font-weight: 100;
   font-size: 1.2vw;
   color:white;
-  margin-left: 125px;
+  margin-left: 105px;
   
 }  
 
@@ -91,7 +74,7 @@ nav {
 .button {
   margin-left: 90px;
   display: block;
-  margin-left: 103px;
+  margin-left: 80px;
 }
 
 .learn {
