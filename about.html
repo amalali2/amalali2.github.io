@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/shared.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700|Inconsolata" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,15 @@
   </head>
 <STYLE>A {text-decoration: none;} </STYLE>
 <body>
-<nav>
-   <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">&#9776;</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
+    <div class = "main-nav">
+        <ul>
+          <li class="about"><a href="index.html">amal</a></li>
+          <li class="work"><a href="projects.html">work</a></li>
+          <li class="about"><a href="about.html">about</a></li>
+          <li class="contact"><a href="contact.html">contact</a></li>         
+        </ul>
     </div>
-</nav>
+<div class="col-1">
    <div class = "title-text">
         <h2>About Me</h2>
         
@@ -28,7 +27,7 @@
 
 
         <div class = "text-1">
-  <p>I am a Designer and Full-Stack Developer based in Columbus, OH. </p>
+  <p>I am a designer and front-end developer from Columbus, OH. </p>
   
   
      <strong>Web Development</strong>
@@ -36,7 +35,7 @@
       
           <p>I stumbled upon basic HTML and CSS tutorials during my early undergrad years, and consequently fell in 
           love with with the potential of not only being able to visualize my ideas but also develop them from the 
-          ground up on my own as well. Out of this interest for development, my passion for functionality and structure 
+          ground up on my own as well. <br><br> Out of this interest for development, my passion for functionality and structure 
           evolved. Jumping right into Photoshop to create something didn’t feel accurate anymore and skipping the steps of building
           a framework based on functionality and usability became inevitable.</p>
   
@@ -58,10 +57,25 @@
           whole process. </p>
       </div>
     </div> 
-</div>  
-<footer>
-    <p> © 2018 by Amal Ali</p>
-</footer>
- <script src="/js/index.js"></script>
+</div> 
+</div> 
+<div class="icon" id="toggle">
+    <div class="top"></div>
+    <div class="middle"></div>
+    <div class="bottom"></div>
+</div>
+    
+<div class="overlay" id="overlay">
+<nav class="overlay-menu">
+    <ul>
+        <li class="about"><a href="index.html" class="active" >amal</a></li>
+        <li class="work"><a href="projects.html">work</a></li>
+        <li class="about"><a href="about.html">about</a></li>
+        <li class="contact"><a href="contact.html">contact</a></li>  
+    </ul>
+</nav>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>

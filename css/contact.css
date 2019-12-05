@@ -1,55 +1,12 @@
-body {
-    background-color: #2A34E2;
-    
-}
-
-/* NAV */
-
-nav {
-    background-color: #2A34E2;
-    margin-left: -1%;
-  }
-
-  .dropbtn {
-    color: white;
-  }
-  
-  .logo {
-    float: left;
-    vertical-align: middle;
-    font-size: 35px;
-    padding: 25px;
-    padding-top: 20px;
-    padding-left: 25px;
-    margin-left: 80px;
-  }
-  
-  nav ol {
-    display: inline;
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    cursor: pointer;
-    padding: 30px;
-    float: right; 
-    font-family: 'Work Sans', sans-serif;
-    color: white;
-    padding-top: 26px;
-    padding-right: 10px;
-    margin-right: 80px;
-    font-size: 20px;
-  }
-  
-  nav li a {
-    padding: 15px;
-    color: white;
-  }
-
-
 /* CONTACT */
-  
+
+  .form-banner {
+    width: 800px;
+    right: -40vh;
+    position: relative;
+    text-align: left;
+  }
+
   input {
     display: block;
     font-family: 'Work Sans', sans-serif;
@@ -59,29 +16,37 @@ nav {
   
   input[type=email] {
       border-style: solid;
-      border-color: white;
+      border-color: #ED4804;
       background: transparent;
       font-size: 20px;
-      margin: 25px;
-      width:calc(90% - 50px);
+      margin: 0 0 25px 0;
+      width: calc(100% - 52px);
       height:50px;
       text-indent: 6px;
-      margin-left: 80px;
   }
   
+  textarea {
+    margin: 0 0 25px 0;
+    border: 2px solid #ED4804;
+    background: transparent;
+    font-size: 20px;
+    width: calc(100% - 50px);
+    height: 250px;
+    text-indent: 6px;
+    top: 40px;
+  }
   
   input[type=text] {
     margin-bottom: 20px;
     border-style: solid;
-    border-color: white;
+    border-color: #ED4804;
     background: transparent;
     font-size: 20px;
-    margin: 25px;
-    width:calc(90% - 50px);
+    margin: 25px; 
+    width: calc(100% - 42px);
     height:250px;
     text-indent: 6px;
     top: 40px;
-    margin-left: 80px;
   }
   
   input[type=submit] {
@@ -89,25 +54,21 @@ nav {
   }
   
   input[type=submit] {
-    color: white;
-    background-color: white;
-    border: 2px solid white;
+    background-color: #ED4804;
+    border: 2px solid #ED4804;
     font-family: 'Work Sans', sans-serif;
-    color: #2A34E2;
+    color: #fff;
     padding: 2px;
-    width:calc(30% - 10px);
-    height:50px;
+    width: calc(19% - 10px);
+    height: 50px;
     text-align: center;
-    margin: 25px;
+    margin: 0 0 25px 0;
     font-size: 15px;
-    margin-left: 80px;
-    margin-bottom: 5%;
   }
   
   input[type=submit]:hover {opacity: 1}
   
   ::placeholder {
-      color: white;
       right: 10px;
       top: 0px;
       height: 150px;
@@ -115,20 +76,16 @@ nav {
   
   .formtitle > h2 {
     margin-top: 5%;
-    margin-left: 25px;
+    margin: 0 0 25px 0;
     font-size: 60px;
-    color: white;
     font-family: 'Crimson Text', serif;
-    margin-left: 80px;
   }
   
   div.formtitle p {
-    margin: 25px;
+    margin: 0 0 25px 0;
     font-size: 19px;
     line-height: 25px;
-    color: white;
     font-family: 'Work Sans', sans-serif;
-    margin-left: 80px;
   }   
 /* FOOTER */
 
@@ -149,40 +106,82 @@ footer p {
   color: white;
 }
 
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-@media screen and (max-width: 1200px) {
+svg#Layer_1 {
+  fill: #ED4804;
+  position: absolute;
+  top: -45vh;
+  right: -85px;
+  -webkit-animation:spin 35s linear infinite;
+  -moz-animation:spin 35s linear infinite;
+  animation:spin 35s linear infinite;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .form-banner {
+    right: 0px !Important;
+    width: 700px;
+    margin: auto;
+  }
+
+  .overlay-content {
+    top: 15%;
+  }
+
+  textarea, input[type=email] {
+    width: calc(105% - 50px);
+  }
+
+  svg#Layer_1 {
+    top: 50vh;
+    left: 15vw;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .form-banner {
+    width: 700px;
+    margin: auto;
+  }
+
+  textarea, input[type=email] {
+    width: calc(105.5% - 42px);
+  }
+
+  
+}
+/*@media screen and (max-width: 1200px) {
 
 nav {
   margin-left: -7%;
 }
 
-
-/* CONTACT */
+/* CONTACT 
 
 input {
   display: block;
   font-family: 'Work Sans', sans-serif;
-  color: white;
-  
 }
 
 input[type=email] {
     border-style: solid;
-    border-color: white;
     background: transparent;
     font-size: 20px;
     margin: 20px;
     width:calc(100% - 50px);
     height:50px;
     text-indent: 6px;
-   
 }
 
 
 input[type=text] {
   margin-bottom: 20px;
   border-style: solid;
-  border-color: white;
   background: transparent;
   font-size: 20px;
   margin: 20px;
@@ -197,11 +196,7 @@ input[type=submit] {
 }
 
 input[type=submit] {
-  color: white;
-  background-color: white;
-  border: 2px solid white;
   font-family: 'Work Sans', sans-serif;
-  color: #2A34E2;
   padding: 2px;
   width:calc(30% - 10px);
   height:50px;
@@ -213,7 +208,6 @@ input[type=submit] {
 input[type=submit]:hover {opacity: 1}
 
 ::placeholder {
-    color: white;
     right: 10px;
 }
 
@@ -221,7 +215,6 @@ input[type=submit]:hover {opacity: 1}
   margin-top: 12%;
   margin-left: 25px;
   font-size: 60px;
-  color: white;
   font-family: 'Crimson Text', serif;
 }
 
@@ -229,11 +222,10 @@ div.formtitle p {
   margin: 25px;
   font-size: 19px;
   line-height: 25px;
-  color: white;
   font-family: 'Work Sans', sans-serif;
 }   
 
-/* FOOTER */
+/* FOOTER 
 
 footer {
     background-color: white;
@@ -272,7 +264,7 @@ footer {
 }
 
 
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 700px) {
 
   nav {
     background-color: #2A34E2;
@@ -280,7 +272,7 @@ footer {
   }
 
 
-/* CONTACT */
+/* CONTACT 
 
 input {
   display: block;
@@ -356,7 +348,7 @@ div.formtitle p {
   font-family: 'Work Sans', sans-serif;
 }   
 
-/* FOOTER */
+/* FOOTER 
 
 footer {
     background-color: white;
@@ -391,4 +383,4 @@ footer {
     padding: 10px;
   }
 
-}
+}*/
