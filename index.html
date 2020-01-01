@@ -2,475 +2,113 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700,200|Big+Shoulders+Display|Lato|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Maven+Pro|Volkhov:700:100,40&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Amal Ali / Designer + Developer</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="https://cdnjs.�cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">    
   </head>
 <STYLE>A {text-decoration: none;} </STYLE>
 <body>
-<div class="under-construction">
+<!--<div class="under-construction">
 <h1>Under Construction</h1>
 <p>Hi, I'm currently working on this site. In the meantime...</p>
 <button class="git">
     <a href="mailto:435amal@gmail.com" target="_top">Get In Touch</a>
 </button>
 </div>
-<!--Navigation-->
-<div class="nav" style="font-family: 'Work Sans', sans-serif; ">
-    <div class="one">
-      01
+-->
+<nav class="navigation">
+
+    <!--a class="logo" href="/">Amal '19 ©</a>-->
+    <div class="site-menu" id="site-menu">
+        <div class="site-menu-background js-close-menu"></div>
+        <!-- Hamburger menu -->
+        <button class="site-menu-sidebar js-open-menu">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      
+        <div class="site-menu-inner">
+          <div class="site-menu-container">
+            <!-- Header Menu-->
+            <div class="site-menu-header">
+              <span class="site-menu-suptitle">
+                  <span class="text">Navigate to</span>
+              </span>
+              <button type="button" class="site-menu-close js-close-menu">
+                  <span class="u-visually-hidden">Close menu</span>
+                  <span class="line line-1"></span>
+                  <span class="line line-2"></span>
+                </button>
+            </div>
+            <!-- Navigation -->
+            <nav class="site-navigation">
+              <ul class="site-navigation-list" style="list-style: none;">
+                <li class="site-navigation-item">
+                  <a class="site-navigation-link " href="#">
+                      <span class="link-text">About</span>
+                    </a>
+                </li>
+                <li class="site-navigation-item">
+                  <a class="site-navigation-link" href="#">
+                      <span class="link-text">Selected Works</span>
+                    </a>
+                </li>
+                <li class="site-navigation-item">
+                  <a class="site-navigation-link " href="#">
+                      <span class="link-text">Contact</span>
+                    </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    <div class="menu-icon">
+        <span class="menu-icon__line menu-icon__line-left"></span>
+        <span class="menu-icon__line"></span>
+        <span class="menu-icon__line menu-icon__line-right"></span>
     </div>
-    <div class="two">
-      02
-    </div>
-    <div class="three">
-      03
-    </div>
-    <div class="four">
-      04
-    </div>
-    <div class="five">
-      05
-    </div>
+</nav>
+<div class="homepage">
+  <div class="homepage-content">
+      <p>Hi. I'm Amal.<br> A designer and developer crafting <br> meaningful user experiences.
+      <br>
+      <br>
+      <span><a href="mailto:435amal@gmail.com?Subject=Hello." target="_top">Shoot me a line.</a></span>
+      </p>
+      </div>
   </div>
+</div>
+<section class="projects">
+    <div class="grid">
+  
+        <a href="#">
+          <div class="module-1"></div>
+          <p class="work-title">Justice<br><span>Front End Development</span></p>
+        </a>
+        <a href="#">
+          <div class="module-2"></div>
+          <p class="work-title">DressBarn<br><span>Front End Development</span></p>
+        </a>
+        <a href="https://www.behance.net/gallery/67484687/Podcast-Branding-Act-Your-Own-Area-Code">
+          <div class="module-3"></div>
+          <p class="work-title">Act Your Own Area Code<br><span>Graphic Design + Illustration</span></p>
+        </a>
+        <a href="https://www.behance.net/gallery/68731955/Programming-Learning-Website-UI-UX-Design">
+          <div class="module-4"></div>
+          <p class="work-title">treeTDD<br><span>UI/UX Design + Illustration</span></p>
+        </a>
 
-  <!--About-->
-  <div class="abt">
-      <div class="one">
-        about
       </div>
-  </div>
-  
-  <div id="fullpage">
-  
-    <!--Section One-->
-    <div class="section active" class="section1">
-  
-      <!--Work General Info Container-->
-      <div class="wrapper">
-        <div class="container">
-  
-          <!--White Panel Closing transition-->
-          <div class="overflow_white">
-            <div class="white">
-            </div>
-          </div>
-  
-          <!--Work Info-->
-          <div class="overflow">
-            <div class="info">
-                <div class="slider">
-                    <div class="slider__controls">
-                        <div class="prev js-control-prev">Prev</div>
-                        <div class="next js-control-next">Next</div>
-                    </div>
+</section>
 
-                    <div class="slider__wrap">
-                      <ul class="slider__inner">
-                        <li>
-                          <div class="slide__image">
-                            <img src="./img/dressbarn-copy3.png" alt="Picture">
-                          </div>
-                        </li>
-                        <li class="slide--right">
-                          <div class="slide__image">
-                            <img src="clp-plp.gif" alt="this slowpoke moves"  />
-                            <!--<video preload="auto" loop="" autoplay="" playsinline="" class="clp-plp-test"><source src="./img/test-clp-plp.mov" type="video/mp4"></video>-->
-                          </div>
-                        </li>
-                        <li class="slide--right">
-                          <div class="slide__image">
-                            <img src="./img/dressbarn-copy3.jpg" alt="Picture">
-                          </div>
-                        </li>
-                        <li class="slide--right">
-                          <div class="slide__image">
-                            <img src="http://valentinbellamy.com/wp-content/uploads/2017/08/pic4-min.jpg" alt="">
-                          </div>
-                        </li>
-                        <li class="slide--left">
-                          <div class="slide__image">
-                            <img src="http://valentinbellamy.com/wp-content/uploads/2017/08/pic5-min.jpeg" alt="Picture">
-                          </div>
-                        </li>
-                      </ul>
-                    </div>                    
-                  </div>
-            </div>
-          </div>
-  
-          <!--Open/Close Info Button-->
-          <div class="info_button">
-            <div class="button_text">
-              <span class="open">project</span>
-              <span class="close">close</span>
-            </div>
-            <div class="button_line">
-            </div>
-          </div>
-  
-          <!--Image-->
-          <div class="image"  style="background-image: url(./img/dressbarn.jpg">
-          </div>
-  
-          <!--Work Titles
-          <h1 class="pagination">001</h1>-->
-
-          <div class="work_headers">
-            <h1>DressBarn</h1>
-            <!--<h2>PDP Redesign</h2>-->
-          </div>
-  
-        </div>
-      </div>
-  
-    </div>
-  
-  
-    <!--Section Two-->
-    <div class="section" class="section2">
-  
-      <!--Work General Info Container-->
-      <div class="wrapper">
-        <div class="container">
-          <!--White Panel Closing transition-->
-          <div class="overflow_white">
-            <div class="white">
-            </div>
-          </div>
-  
-          <!--Work Info-->
-          <div class="overflow">
-            <div class="info">
-              <div class="info_text_container">
-                <h1>Title</h1>
-                <h2>-Subtitle</h2>
-                <div class="work_overview">
-                  <p class="work_date">Dates:11/2/2016 | </p>
-                  <p class="work_role">Role:Info</p>
-                </div>
-                <div class="work_desc">
-                  <p>General info here, talk about what I did, what it is for, how I changed the project/ increased quality etc.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!--Open/Close Info Button-->
-          <div class="info_button">
-            <div class="button_text">
-              <span class="open">project</span>
-              <span class="close">close</span>
-            </div>
-            <div class="button_line">
-            </div>
-          </div>
-  
-          <!--Image-->
-          <div class="image"  style="background-image: url(./img/justice.jpg">
-          </div>
-  
-          <!--Work Titles-->
-          <h1 class="pagination">002</h1>
-          <div class="work_headers">
-            <h1>Justice</h1>
-            <h2>Size Option Redesign</h2>
-          </div>
-  
-        </div>
-      </div>
-  
-    </div>
-  
-  
-    <!--Section Three-->
-    <div class="section" class="section3">
-  
-      <!--Work General Info Container-->
-      <div class="wrapper">
-        <div class="container">
-  
-          <!--White Panel Closing transition-->
-          <div class="overflow_white">
-            <div class="white">
-            </div>
-          </div>
-  
-          <!--Work Info-->
-          <div class="overflow">
-            <div class="info">
-              <div class="info_text_container">
-                <h1>Title</h1>
-                <h2>-Subtitle</h2>
-                <div class="work_overview">
-                  <p class="work_date">Dates:11/2/2016 | </p>
-                  <p class="work_role">Role:info</p>
-                </div>
-                <div class="work_desc">
-                  <p>General info here, talk about what I did, what it is for, how I changed the project/ increased quality etc.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!--Open/Close Info Button-->
-          <div class="info_button">
-            <div class="button_text">
-              <span class="open">view project</span>
-              <span class="close">close</span>
-            </div>
-            <div class="button_line">
-            </div>
-          </div>
-  
-          <!--Image-->
-          <div class="image" style="background-image: linear-gradient(rgba(21, 22, 29, .3), rgba(21, 22, 29, .3)),  url(http://www.natcom.org/uploadedImages/More_Scholarly_Resources/Doctoral_Program_Resource_Guide/UPenn%20Campus.jpg)">
-          </div>
-  
-          <!--Work Titles-->
-          <h1 class="pagination">003</h1>
-          <div class="work_headers">
-            <h1>Athlete</h1>
-            <h2>Subtitle</h2>
-          </div>
-  
-        </div>
-      </div>
-  
-    </div>
-  
-  
-    <!--Section Four-->
-    <div class="section" class="section4">
-  
-      <!--Work General Info Container-->
-      <div class="wrapper">
-        <div class="container">
-  
-          <!--White Panel Closing transition-->
-          <div class="overflow_white">
-            <div class="white">
-            </div>
-          </div>
-  
-          <!--Work Info-->
-          <div class="overflow">
-            <div class="info">
-              <div class="info_text_container">
-                <h1>Title</h1>
-                <h2>-Subtitle</h2>
-                <div class="work_overview">
-                  <p class="work_date">Dates:11/2/2016 | </p>
-                  <p class="work_role">Role:Info</p>
-                </div>
-                <div class="work_desc">
-                  <p>General info here, talk about what I did, what it is for, how I changed the project/ increased quality etc.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!--Open/Close Info Button-->
-          <div class="info_button">
-            <div class="button_text">
-              <span class="open">project</span>
-              <span class="close">close</span>
-            </div>
-            <div class="button_line">
-            </div>
-          </div>
-  
-          <!--Image-->
-          <div class="image" style="background-image: linear-gradient(rgba(21, 22, 29, .3), rgba(21, 22, 29, .3)),  url(https://s3.amazonaws.com/everipedia-storage/NewlinkFiles/1383/20388023.jpg)">
-          </div>
-  
-          <!--Work Titles-->
-          <h1 class="pagination">003</h1>
-          <div class="work_headers">
-            <h1>Leader</h1>
-            <h2>Subtitle</h2>
-          </div>
-  
-        </div>
-      </div>
-  
-    </div>
-  
-  
-    <!--Section Five-->
-    <div class="section" class="section5">
-  
-      <!--Work General Info Container-->
-      <div class="wrapper">
-        <div class="container">
-  
-  
-          <!--White Panel Closing transition-->
-          <div class="overflow_white">
-            <div class="white">
-            </div>
-          </div>
-  
-          <!--Work Info-->
-          <div class="overflow">
-            <div class="info">
-              <div class="info_text_container">
-                <h1>Title</h1>
-                <h2>-Subtitle</h2>
-                <div class="work_overview">
-                  <p class="work_date">Dates:11/2/2016 | </p>
-                  <p class="work_role">Role:Info</p>
-                </div>
-                <div class="work_desc">
-                  <p>General info here, talk about what I did, what it is for, how I changed the project/ increased quality etc.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!--Open/Close Info Button-->
-          <div class="info_button">
-            <div class="button_text">
-              <span class="open">project</span>
-              <span class="close">close</span>
-            </div>
-            <div class="button_line">
-            </div>
-          </div>
-  
-          <!--Image-->
-          <div class="image" style="background-image: linear-gradient(rgba(21, 22, 29, .3), rgba(21, 22, 29, .3)),  url(https://s3.amazonaws.com/everipedia-storage/NewlinkFiles/1383/20388023.jpg)">
-          </div>
-  
-          <!--Work Titles-->
-          <div class="work_headers">
-            <h1>Leader</h1>
-            <h2>Subtitle</h2>
-          </div>
-  
-        </div>
-      </div>
-  
-    </div>
-  
-  
-  </div>
-   <!-- <body class="loading">
-
-        <!--FULL SCREEN PRELOADER-/->
-        <div class="preloader"></div>
+   
       
-        <!--Menu-/->
-        <a href="#" class="link one" style="color:#fff">Work</a>
-        <a href="#" class="link two" style="color:#999">About</a>
-      
-        <div id="fullpage">
-        <!--Intro-/->
-        <div class="section" class="section1">
-      
-            <!--Work General Info Container-/->
-            <div class="wrapper">
-              <div class="container">
-      
-                <!--Black Panel Transition Between Works--/>
-                <div class="overflow">
-                  <div class="black">
-                  </div>
-                </div>
-      
-                <!--White Panel Closing transition-/->
-                <div class="overflow_white">
-                  <div class="white">
-                  </div>
-                </div>
-      
-                <!--Image Slider-/->
-                <div class="image" style="background-image: url(./img/dressbarn.jpeg)">
-                </div>
-      
-                <!--Work Titles--/>
-                <div class="work_headers">
-                  <h1>DressBarn</h1>
-                </div>
-      
-              </div>
-            </div>
-      
-          </div>
-       <!--Work One-/->
-          <div class="section" class="section2">
-      
-            <!--Work General Info Container-/->
-            <div class="wrapper">
-              <div class="container">
-      
-                <!--Black Panel Transition Between Works-/->
-                <div class="overflow">
-                  <div class="black">
-                  </div>
-                </div>
-      
-                <!--White Panel Closing transition-/->
-                <div class="overflow_white">
-                  <div class="white">
-                  </div>
-                </div>
-      
-                <!--Image Slider-/->
-                <div class="image" style="background-image: url(./img/justice.jpg)">
-                </div>
-      
-                <!--Work Titles-/->
-                <div class="work_headers">
-                  <h1>First Project</h1>
-                </div>
-      
-              </div>
-            </div>
-      
-          </div>
-      
-          <!--Work Two-/->
-          <div class="section" class="section">
-      
-            <!--Work General Info Container-/->
-            <div class="wrapper">
-              <div class="container">
-      
-                <!--Black Panel Transition Between Works-/->
-                <div class="overflow">
-                  <div class="black">
-                  </div>
-                </div>
-      
-                <!--White Panel Closing transition-/->
-                <div class="overflow_white">
-                  <div class="white">
-                  </div>
-                </div>
-      
-      
-                <!--Image Slider-/->
-                <div class="image" style="background-image: url(https://assets.awwwards.com/awards/sites_of_the_day/2016/12/awwwards-sotd-Anonymous-Hamburger-1-1.jpg)">
-                </div>
-      
-                <!--Work Titles-/->
-                <div class="work_headers">
-                  <h1>Second Project</h1>
-                </div>
-      
-              </div>
-            </div>
-      
-          </div>
-      
-        </div>-->
-      
-      </body>
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://www.greenmarble.jp/script/scrollbypage/fsvs.js"></script>
 <script src="./js/index.js"></script>
