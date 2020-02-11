@@ -20,55 +20,37 @@
   });
 });**/
 
-// nav
-
-const init = () => {
-  const openMenu = document.querySelector(`.js-open-menu`);
-  const closeMenu = document.querySelector(`.site-menu-close`);
-
-  const body = document.body;
-
-  openMenu.addEventListener(`click`, () => {
-    body.classList.add(`is-menu-open`);
-  });
-  closeMenu.addEventListener(`click`, () => {
-    document.body.className = document.body.className.replace(`is-menu-open`, ``);
-  });
-};
-
-init();
-
 //
 
-$( function(){
+/*******Filtering*******/
 
-  var scrollTop = $(window).scrollTop();
-
-  function lol( $this ) {
-    var translate = (scrollTop - $($this).data('orig-offset')) / $(window).height() * 45;
-    $($this).css({transform: 'translate3d(0,' + translate +'%'+', 0)'});
-  }
-
-  $('.parallax-text').each( function() {
-    $(this).data('orig-offset', $(this).offset().top);
-    lol( $(this) );
+// init Isotope
+var $grid = $('.img-grid').isotope({
+    itemSelector: '.img-container',
+    //layoutMode: 'fitRows',
   });
 
-  $(window).scroll( function() {
-    scrollTop = $(window).scrollTop();
+  // filter functions
+  var filterFns = {
+    // show if number is greater than 50
+    numberGreaterThan50: function() {
 
-    $('.module-2').each( function() {
-      lol( $(this) );
+    },
+  };
+
+  // bind filter button click
+  $('#filter-btn').on( 'click', 'button', function() {
+    var filterValue = $( this ).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
     });
   });
-
-$(window).on('resize', function () {
-  scrollTop = $(window).scrollTop();
-
-  $('.module-2a ').each( function() {
-    $(this).data('orig-offset', $(this).offset().top);
-    lol( $(this) );
-  });
-});
-
-});

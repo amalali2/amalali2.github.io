@@ -1,6 +1,5 @@
 body {
     color: #F0343C;
-    background-color: #f6eee3;
     font-family: 'Josefin Sans',sans-serif;
   }
 .back-arrow {
@@ -13,38 +12,86 @@ body {
     display: flex;
     align-content: center;
     flex-direction: column;
-    margin: 0 10vw;
+    margin: 0 20vw;
 }
-.footer {
-    display: flex;
+
+.cls-11, .cls-25 {
+    color: #F6C09C;
+    stroke: #F6C09C;
+    fill: #F6C09C;
+}
+
+h1.hypothesis {
+    font-family: 'Great Vibes', serif;
+    font-weight: 100;
+    font-size: 6vh;
+    margin: 0 10vw 10vw 5vw;
+}
+
+p.hypothesis-text {
     font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 100vh;
-    width: 100vw;
-    font-size: 5vh;
-    line-height: 1.2;
+    font-size: 2vh;
+    line-height: 4vh;
+    color: #000;
+    margin: 15vh 5vw 10vw 0vw;
 }
+
+.hypothesis-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+    .hypothesis-container {
+        display: block;
+        flex-direction: row;
+    }
+
+    h1.hypothesis {
+        font-size: 4vh;
+        margin: 0 5vw 0vw 5vw;
+    }
+    p.hypothesis-text {
+        margin: 2vh 5vw 10vw 5vw;
+    }
+}
+
 .project-description {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3vh;
     line-height: 1.6;
     margin: 5vh;
 }
+
 .project-title {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Yeseva One',sans-serif;
     display: flex;
     align-items: center;
     height: 100vh;
     margin: 0 5vh;
     font-size: 5vh;
     line-height: 1.2;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.project-title h1 {
+    text-align: center;
+}
+
+.project-title p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vh;
+    line-height: 1.6;
+    margin: 5vh;
+    text-align: center;
+}
+
 img, video.clp-plp-test {
     position: relative;
     width: 100%;
 }
+
 @media screen and (max-width: 1280px) {
 
 .col-1 {
@@ -52,13 +99,13 @@ img, video.clp-plp-test {
 }
 
 .project-title {
-    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
-    height: 100vh;
-    margin: 0 2vh;
-    font-size: 4vh;
+    height: 80vh;
+    margin: 0 5vh;
+    font-size: 3vh;
     line-height: 1.2;
+    font-family: 'Yeseva One',sans-serif;
 }
 
 .t-mockup.nv {
