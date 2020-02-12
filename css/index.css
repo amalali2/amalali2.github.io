@@ -35,7 +35,7 @@ input[type=email] {
 
 textarea {
   margin: 0 0 25px 0;
-  padding-top: 15px;
+      padding-top: 15px;
   border: 2px solid #C96755;
   background: transparent;
   font-size: 20px;
@@ -103,6 +103,27 @@ textarea, input[type=email] {
 
 }
 
+
+@media screen and (min-width: 768px) {
+
+  section#portfolio {
+    height: auto !important;
+  } 
+
+  .marquee-wrapper {
+    margin: 2vw 0 !important;
+  }
+
+  input[type=submit] {
+    width: calc(30% - 10px);
+  }
+
+  .footer--email {
+    margin-bottom: 0vw !important;
+  }
+  
+}
+
 @media screen and (max-width: 767px) {
   .form-banner {
     width: 700px;
@@ -116,10 +137,6 @@ textarea, input[type=email] {
   input[type=submit] {
     width: calc(40% - 10px);
   }
-
-  .footer--email {
-    margin-bottom: 14.375vw;
-}
 }
 
 body {
@@ -404,6 +421,7 @@ h1.developer {
   font-size: -moz-calc(2400vw/var(--size));
   font-size: calc(2400vw/var(--size));
   margin-top: 1.25rem;
+  margin-bottom: 14.375vw;
   -webkit-transition: all .3s ease;
   -o-transition: .3s ease all;
   -moz-transition: .3s ease all;
