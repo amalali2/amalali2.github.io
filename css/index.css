@@ -35,6 +35,7 @@ input[type=email] {
 
 textarea {
   margin: 0 0 25px 0;
+  padding-top: 15px;
   border: 2px solid #C96755;
   background: transparent;
   font-size: 20px;
@@ -115,6 +116,10 @@ textarea, input[type=email] {
   input[type=submit] {
     width: calc(40% - 10px);
   }
+
+  .footer--email {
+    margin-bottom: 14.375vw;
+}
 }
 
 body {
@@ -336,7 +341,7 @@ h1.developer {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 15vh 0;
+      margin: 15vh 0;
 }
 
 .footer .r-footer_c-first, .footer .r-footer_c-second {
@@ -399,7 +404,6 @@ h1.developer {
   font-size: -moz-calc(2400vw/var(--size));
   font-size: calc(2400vw/var(--size));
   margin-top: 1.25rem;
-  margin-bottom: 14.375vw;
   -webkit-transition: all .3s ease;
   -o-transition: .3s ease all;
   -moz-transition: .3s ease all;
@@ -440,6 +444,10 @@ section#portfolio {
     float: none;
   }
 
+  p._w-title {
+    display: none;
+}
+
   .f-links--1, .f-links--2, .f-links--3 {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -462,6 +470,19 @@ section#portfolio {
     -webkit-justify-content: space-between;
     -moz-box-pack: justify;
     justify-content: space-between;
+}
+
+.footer .r-footer {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0vh 0 10vh;
 }
 }
 
