@@ -1,15 +1,52 @@
-body {
-  margin-right: 0px;
-}
-
 a {
   color: inherit;
+}
+
+.eye {
+  cursor: pointer;
+}
+
+.eyeContent{
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 4000px;
+  overflow:hidden;
+}
+
+.pupil{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border: solid 2px #000;
+  border-radius: 50%;
+  left: calc(50% - 5px/2 - 2px);
+  top: calc(50% - 5px/2 - 2px);
+  transition: all ease .1s;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin: 5vw 2vw;
+  border: 0;
+  height: 2px;
+  background: #E30A00;
 }
 
 nav {
   left: 0;
   z-index: 89;
   width: 100%;
+  margin: 2.5vh 2vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -17,24 +54,6 @@ nav {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position:absolute;
-}
-
-nav a {
-  left: 0;
-  top: 0;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  padding: 40px 50px;
-  color: #C96755;
-  text-decoration: none;
-  font-size: 110%;
-  font-weight: 500;
-  display: inline-block;
-  font-family: 'Josefin Sans';
 }
 
 a.nav__link.logo {
@@ -42,10 +61,49 @@ a.nav__link.logo {
   /* height: 1vh; */
 }
 
-
 #p-logo {
   height: 13vh;
   margin: 3vh;
   cursor: pointer;
 }
+
+.page-transition .div{
+  position:fixed;
+  z-index: 444;
+  background-color:#C96755;
+  height:100%;
+  bottom:0%;
+  width:25%;
+}
+
+.page-transition .div:nth-child(1){
+  left:0px;
+}
+.page-transition .div:nth-child(2){
+  left:25%;
+}
+.page-transition .div:nth-child(3){
+  left:50%;
+}
+.page-transition .div:nth-child(4){
+  left:75%;
+}
+
+
+.preload{
+  position:absolute;
+  top:50%;
+  left:50%;
+  padding-left: 0px;
+  transform:translate(-50% , -50%);
+}
+.preload li{
+  display:none !important;
+  width:10px;
+  height:10px;
+  border:2px solid #fff;
+  border-radius:50%;
+  z-index: 445;
+}
+
 
