@@ -281,17 +281,25 @@ textarea, input[type=email] {
       text-align: left;
   }
 
-  .element-item div {
-    width: 94vw !important;
+  body {
+    margin: 3vw;
   }
 
-  .marquee-wrapper {
-    margin: 2vw 0 !important;
+  .element-item div {
+    width: 94vw !important;
   }
 
   .form-banner {
     width: 700px;
     margin: auto;
+  }
+
+  .grid {
+    margin-left: -2vw !important;
+  }
+
+  .marquee-wrapper {
+    margin: 2vw 0 !important;
   }
 
   textarea, input[type=email] {
@@ -301,6 +309,7 @@ textarea, input[type=email] {
   input[type=submit] {
     width: calc(40% - 10px);
   }
+
 }
 
 .wrapper {
@@ -461,11 +470,6 @@ textarea, input[type=email] {
 
   .wrapper {
     margin: 0px 3vw;
-  }
-
-  .grid {
-    grid-gap: 1em;
-    margin: -1.5vw;
   }
   
   h2.o-heading-m.darkMode {
@@ -786,4 +790,5 @@ li.active {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 1.5vw;
 }
