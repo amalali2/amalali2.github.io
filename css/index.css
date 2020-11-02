@@ -347,10 +347,10 @@ a:visited, a {
     margin: 6vw;
   } 
   .hp-headline h1 {
-    font-size: 6vh;
+    font-size: 5.5vh;
   }
   .hp-headline p {
-      font-size: 1.5vh;
+    font-size: 2vh;
   }
   .modal__wrapper {
     padding: 0px;

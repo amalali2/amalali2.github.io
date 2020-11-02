@@ -39,10 +39,10 @@ $(document).ready(function(){
         $(".modal").delay(1000).hide();
     }
 
-    var carousel;
-    $(document).ready(function () {
-        carousel = $("ul");
-        carousel.itemslide();
-    });
+});
 
+var carousel;
+$(document).ready(function () {
+    carousel = $("ul");
+    carousel.itemslide();
 });
