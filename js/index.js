@@ -1,67 +1,48 @@
-// fade background color
-
-/*$(document).ready(function(){       
-  var scroll_pos = 0;
-  $(document).scroll(function() { 
-      scroll_pos = $(this).scrollTop();
-      if(scroll_pos > 350) {
-          $("body").css('background-color', '#F3E0D7');
-          $("body").css('color', '#C96755');
-          $("hr").css('border-color', '#C96755');
-          $("body").css('fill', '#C96755');
-          $(".logo").css('color', '#C96755');
-      } else {
-          $("body").css('background-color', '#C96755');
-          $("body").css('color', '#fff');
-          $("hr").css('border-color', '#fff');
-          $("body").css('fill', '#fff');
-          $(".logo").css('color', '#fff');
-      }
-  });
-});*/
-
-//
-
-/***** Loader ******/
-
-
-
-/*******Filtering*******/
-
-// init Isotope
+// Modal functions
 $(document).ready(function(){
-  $('.portfolio-item').isotope(function(){
-      itemSelector:'.item'
+   
+    $("#scrolling li p a").on("click", function() {
+        if ($(this).attr("id")) {
+        $("body").removeClass('modal-is-closed');
+        $("body").addClass('modal-is-showing');
+        $('.modal').css('opacity','1');
+        $(".modal").show();
+
+
+        var itemId = $(this).attr("id");
+        var showItem = $('.item').attr("id")==itemId
+        
+        $('.project-content').find('[id="'+itemId+'"]').addClass('show');
+        }
+        
+    });
+    
+    $(".back-btn").on("click", function() {
+        $("body").removeClass('modal-is-showing');
+        $("body").addClass('modal-is-closed');
+        setTimeout(hideModal, 1000)
+        $('.item').removeClass('show');
     });
 
+    var elem = $('.modal');
 
+    elem.scroll(function(e) {
+        if (elem[0].scrollHeight - elem.scrollTop() <= elem.outerHeight()) {
+            $('.modal').css('opacity','0');
+            $('.modal').scrollTop(0);
+            $(".modal").hide();
+            $('.item').removeClass('show');
+        }
+    });
 
-  $('.portfolio-menu ul li').click(function(){
-    $('.portfolio-menu ul li').removeClass('active');
-    $(this).addClass('active');
+    function hideModal() {     
+        $(".modal").delay(1000).hide();
+    }
 
-
-    var selector = $(this).attr('data-filter');
-      $('.portfolio-item').isotope({
-        filter: selector
-      })
-      return false;
-  });
-});
-
-var $grid = $('.grid').isotope({
-  // options
-  itemSelector: '.element-item',
-});
-
-// filter items on button click
-$('.filter-button-group').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
-
-$('.button-group button').click(function(){
-  $('.button-group button').removeClass('active');
-  $(this).addClass('active');
+    var carousel;
+    $(document).ready(function () {
+        carousel = $("ul");
+        carousel.itemslide();
+    });
 
 });
