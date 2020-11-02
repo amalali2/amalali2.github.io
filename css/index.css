@@ -12,7 +12,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Malaka-Regular',sans-serif;
+  font-family: 'Malaka-Regular', serif;
 }
 
 @font-face {
@@ -77,7 +77,7 @@ a.back-btn {
   display: flex;
   position: absolute;
   top: 0;
-      overflow: hidden;
+  overflow: hidden;
 }
 
 .homepage-content {
@@ -290,7 +290,7 @@ img, video {
 #scrolling li p {
   text-transform: uppercase;
   font-size: 4vh;
-  margin: 0 15px;
+  margin: 15px;
   color: #EED7C8; 
   mix-blend-mode: difference;
 }
