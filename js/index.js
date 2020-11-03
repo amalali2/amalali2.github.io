@@ -1,7 +1,7 @@
 // Modal functions
 $(document).ready(function(){
    
-    $("#scrolling li p a").on("click", function() {
+    $("#scrolling li a").on("click", function() {
         if ($(this).attr("id")) {
         $("body").removeClass('modal-is-closed');
         $("body").addClass('modal-is-showing');

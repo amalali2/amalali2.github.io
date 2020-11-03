@@ -15,6 +15,10 @@ body {
   font-family: 'Malaka-Regular', serif;
 }
 
+a:visited, a {
+  color:inherit;
+ }
+
 @font-face {
   font-family: Malaka-Regular;
 }
@@ -291,22 +295,9 @@ img, video {
   align-items: flex-end;
 }
 
-#scrolling li p {
-  text-transform: uppercase;
+#scrolling li a {
   font-size: 4vh;
   margin: 15px;
-  color: #EED7C8; 
-  mix-blend-mode: difference;
-}
-
-a:visited, a {
- color:inherit;
-}
-
-#scrolling li p a {
-  text-decoration-line: underline;
-  font-size: 2.5vh;
-  font-family: sans-serif;
   font-weight: 100;
   cursor: pointer;
   z-index: 99999;
