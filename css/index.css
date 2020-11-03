@@ -119,6 +119,10 @@ img, video {
   display:none;
 }
 
+.landscape {
+  display: none;
+}
+
 .modal {
   position:fixed;
   overflow: scroll;
@@ -326,6 +330,21 @@ a:visited, a {
 
 .spacer {
   height: 105vh;
+}
+
+
+@media only screen and (max-height: 414px) {
+
+  .landscape {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    background: #EED7C8;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
