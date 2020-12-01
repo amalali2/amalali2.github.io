@@ -411,5 +411,12 @@
         "footer";
      }
   }
+
+  @media only screen and (max-width: 767px) {
+    .marquee1 span, .marquee2 span {
+        font-size: 20vw;
+    }
+  }
   
+
   
