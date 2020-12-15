@@ -15,7 +15,7 @@ a {
 body {
 	margin: 0;
 	--color-text: #dc6e25;
-    --color-bg: #efded3;
+    --color-bg: #fff;
     --color-link: #000;
     --color-link-hover: #dc6e25;
 	--aspect-ratio: 1/1.5;
@@ -28,6 +28,15 @@ body {
 	font-size: 1.5rem;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bold p {
+	font-weight: bold;
+	margin: 10px 0;
 }
 
 .demo-1 {
@@ -359,10 +368,10 @@ a.back-btn {
   
   .modal__wrapper {
 	box-shadow: 0 1.75vh 2vh 0 rgba(32,33,34,.4);
-	background-color: #efded3;
+	background-color: #fff;
 	position: relative;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 10px;
 	z-index: 2;
   }
   
@@ -419,9 +428,10 @@ a.back-btn {
   }
   
   .p-container {
-    margin: 10vh;
     font-size: 3vh;
-  }
+    color: #000;
+	padding: 15vh 30vh;
+}
 
   .project {
 	position: fixed;
@@ -435,12 +445,14 @@ a.back-btn {
 	transition: bottom 0.5s ease-in;
   }
 
-  .project-content {
-    padding: 15vh 0vh;
-  }  
+  .project-column {
+    position: initial;
+    display: flex;
+    width: 50%;
+}
 
   .project-hero {
-	height: 50vh;
+	height: 40vh;
 	margin: 10vw 0;
     position: relative;
     background-size: cover;
@@ -471,9 +483,26 @@ a.back-btn {
 		font-size: 15vh;
 		position: relative;
 		word-break: break-word;
-		text-align: center;
+	}
+
+	.p-container {
+		padding: 15vh 3vh;
 	}
   }
+
+  @media only screen and (max-width: 767px) {
+	.project-column {
+		position: initial;
+		display: block;
+		width: 100%;
+	}
+  }
+
+  .project-column {
+    position: initial;
+    /* display: flex; */
+    width: 100%;
+}
   
   .project p {
 	font-size: 3vh;
