@@ -328,6 +328,21 @@ a:focus {
 
 /** modal **/
 
+nav.b-container {
+    position: -webkit-sticky;
+	position: sticky;
+	cursor: pointer;
+	z-index: 9999;
+    height: 20%;
+	width: 100%;
+    top: 0;
+}
+
+a.back-btn {
+    color: inherit;
+    font-size: 3vh;
+}
+
 .item {
 	display:none;
 }
@@ -372,7 +387,7 @@ a:focus {
   .modal-is-showing 
   .modal__bg {
 	opacity:1;
-	transition:opacity .25s ease-out;
+	transition:opacity .35s ease-out;
   }
   
   .modal-is-closed 
@@ -383,13 +398,13 @@ a:focus {
   .modal-is-showing 
   .modal__wrapper {
 	transform: translate3d(0, 0, 0);
-	animation: modal-slide-up .25s ease-out;
+	animation: modal-slide-up .35s ease-out;
   }
   
   .modal-is-closed 
   .modal__wrapper {
 	transform: translate3d(0, 61.8%, 0);
-	animation: modal-slide-down .25s ease-out;
+	animation: modal-slide-down .35s ease-out;
 	opacity:0;
   }
   
@@ -404,14 +419,10 @@ a:focus {
   }
   
   .p-container {
-	margin: 5vh 1vw;
-	font-size: 3vh;
+    margin: 10vh;
+    font-size: 3vh;
   }
-  
-  .p-description {
-	text-indent: 10vw;
-  }
-  
+
   .project {
 	position: fixed;
 	right: 0;
@@ -422,6 +433,46 @@ a:focus {
 	overflow: auto;
 	z-index: 999;
 	transition: bottom 0.5s ease-in;
+  }
+
+  .project-content {
+    padding: 15vh 0vh;
+  }  
+
+  .project-hero {
+	height: 50vh;
+	margin: 10vw 0;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #db .project-hero {
+	background-image: url(https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ijAb3uMAo.Ho/v1/1800x-1.jpg);
+  }
+
+  #lb .project-hero {
+	background-image: url(https://fashionista.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTQ4ODcxMjE4MjMyMDQzMTg3/lane-bryant_super-stretch-skinny.webp);
+  }
+
+  #js .project-hero {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/553fa007e4b04f2b6cd4a71b/1508702085975-GGS2BVAX0YK1DAZYEBU4/ke17ZwdGBToddI8pDm48kM5CPjyHcZVPUhZ73i5Q0nB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0ooWhOa5cxQSJsU3rXf8luWHzPEjE64jG1JpyeE_2n3iNGXb0IoOcpBEgSLZyeAuZg/JU17_PS2_MS40_243_Mailer_13.jpg);
+  }
+
+  .project-title {
+	font-size: 26vh;
+    position: relative;
+    word-break: break-word;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 1024px) {
+	.project-title {
+		font-size: 15vh;
+		position: relative;
+		word-break: break-word;
+		text-align: center;
+	}
   }
   
   .project p {
