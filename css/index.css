@@ -348,6 +348,10 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
+  .meta__about {
+    width: 100%;
+    line-height: 4.7pc;
+    }
   .gr-bottom {
       font-size: 3vh;
   }
