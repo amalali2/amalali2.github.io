@@ -135,3 +135,6 @@ var html = document.documentElement;
     }
 
 });
+
+// cookie
+

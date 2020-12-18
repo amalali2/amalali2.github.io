@@ -26,7 +26,7 @@ body{
   color: var(--white-gr);
   background-color: var(--dark-blue);
   overflow-x: hidden;
-  font-family: 'Elgoc Thin', serif;
+  font-family: 'Elgoc Thin', 'Crimson Text', serif;
 }
 .gr-txt:first-child .gr-bottom {
   font-size: 2.5vw;
@@ -349,6 +349,10 @@ li {
   .gr-title {
       font-size: revert;
   }
+  .gr-year {
+    width: 14.5vw;
+    font-size: 3vh;
+  }
   .section-3, .section-2, .section-1, .row, .py-5 {
       display: block;
   }
@@ -371,5 +375,13 @@ li {
   }
   .row {
       padding: 0 5vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .meta__about {
+    font-size: 4vh;
+    width: 100%;
+    line-height: 3.7pc;
   }
 }
