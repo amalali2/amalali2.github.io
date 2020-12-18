@@ -16,6 +16,20 @@ h2 {margin:0}
     width: 85%;
     line-height: 5.7pc;
 }
+.meta {
+  grid-area: meta;
+  padding: 5vw;
+}
+.meta__links {
+	display: flex;
+	flex-wrap: wrap;
+  line-height: 1.5;
+  font-size: 3vh;
+}
+.meta__links a {
+  padding: 0 3vw 0 0;
+  font-weight: 800;
+}
 body{
   color: var(--white-gr);
   background-color: var(--dark-blue);
