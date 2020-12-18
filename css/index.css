@@ -374,8 +374,20 @@ li {
 
 @media only screen and (max-width: 767px) {
   .meta__about {
-    font-size: 4vh;
+    font-size: 3vh;
     width: 100%;
-    line-height: 3.7pc;
+    line-height: 2.7pc;
   }
+  .p-container {
+    font-size: 1.7vh;
+    padding: 10vh 2vh;
+    display: block;
+  }
+  .p-info {
+    line-height: 1.2pc;
+  }
+  .p-info-left, .p-info-right {
+    width: auto;
+  }
+   
 }
