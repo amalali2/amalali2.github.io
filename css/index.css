@@ -1,7 +1,7 @@
 
 :root {
 font-size: 20px;
-  --dark-blue: #F3E6D5;
+  --dark-blue: #fcf0ec;
   --white-gr: #3B2C80;
   --black: #E15133;
 }
@@ -22,9 +22,6 @@ body{
   font-weight: 100;
   font-style: normal;
 }
-.gr-profile.as.as-l2.as-h1 {
-  width: 17%;
-}
 .gr-txt:first-child .gr-bottom {
   font-size: 2.5vw;
   line-height: 2.5vw;
@@ -41,8 +38,9 @@ body{
 .gr-top {
   font-family: 'Montserrat', serif;
   color: var(--black);
-  margin: 25px 0 0;
-  font-size: 0.7em;
+  margin: 0 0 25px 0;
+  font-size: 0.9em;
+  justify-content: space-between;
 }
 .gr-top, .gr-bottom {
   display: -webkit-box;
@@ -395,9 +393,6 @@ li {
 @media only screen and (max-width: 767px) {
   .gr-year {
     width: 32vw;
-  }
-  .gr-profile.as.as-l2.as-h1 {
-    width: 30%;
   }
   .meta__about {
     font-size: 3vh;
