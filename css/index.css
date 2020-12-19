@@ -11,22 +11,8 @@ a {
 }
 h2 {margin:0; font-weight: 100;}
 .meta__about {
-    font-size: 4vh;
-    width: 80%;
-    line-height: 6.7pc;
-}
-.meta {
-  grid-area: meta;
-  padding: 5vw;
-}
-.meta__links {
-	display: flex;
-	flex-wrap: wrap;
-  line-height: 1.5;
-  font-size: 3vh;
-}
-.meta__links a {
-  padding: 0 3vw 0 0;
+  font-size: 2.4vh;
+  line-height: 5.7pc;
 }
 body{
   color: var(--white-gr);
@@ -35,6 +21,9 @@ body{
   font-family: kansasnew, serif;
   font-weight: 100;
   font-style: normal;
+}
+.gr-profile.as.as-l2.as-h1 {
+  width: 17%;
 }
 .gr-txt:first-child .gr-bottom {
   font-size: 2.5vw;
@@ -60,7 +49,7 @@ body{
   display: flex;
 }
 .gr-project {
-  padding: 0 0 0 3.75vw;
+  padding: 0 0 0 1.75vw;
 }
 .gr-year {
   width: 7.5vw;
@@ -97,6 +86,10 @@ h1{
   display: -ms-flexbox;
   display: flex;
   padding: 5vw;
+}
+.section-center .row {
+  text-align: center;
+  padding: 18vw;
 }
 .section {
   position: relative;
@@ -153,7 +146,7 @@ main {
   top: 0;
   left: 0;
   z-index: 10;
-overflow: hidden;
+  overflow: hidden;
  transform-style: preserve-3d;
 }
 .img-loader {
@@ -349,9 +342,9 @@ li {
 
 @media only screen and (max-width: 1024px) {
   .meta__about {
-    width: 100%;
-    line-height: 4.7pc;
-    }
+      width: 100%;
+      line-height: 4.7pc;
+  }
   .gr-bottom {
       font-size: 3vh;
   }
@@ -361,16 +354,25 @@ li {
   .gr-title {
       font-size: revert;
   }
+  .gr-project {
+      padding: 0 0 0 3.75vw;
+  }
   .gr-year {
-    width: 14.5vw;
-    font-size: 3vh;
+    width: 18.5vw;
   }
   .section-3, .section-2, .section-1, .row, .py-5 {
       display: block;
   }
+  .section-center .row {
+      text-align: center;
+      padding: 7vw;
+  }
   .py-1, .py-2, .py-3, .py-4, .py-5 {
       width: auto;
       padding: 1vh;
+  }
+  .py-5 .gr-txt {
+      width: auto;
   }
   .p-container {
       font-size: 1.7vh;
@@ -391,11 +393,20 @@ li {
 }
 
 @media only screen and (max-width: 767px) {
+  .gr-year {
+    width: 32vw;
+  }
+  .gr-profile.as.as-l2.as-h1 {
+    width: 30%;
+  }
   .meta__about {
     font-size: 3vh;
     width: 100%;
     line-height: 2.7pc;
   }
+  .section-center .row {
+    padding: 5vw;
+  } 
   .p-container {
     font-size: 1.7vh;
     padding: 10vh 2vh;
