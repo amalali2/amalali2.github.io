@@ -55,6 +55,9 @@ $(document).ready(function() {
       if(counter == 101) {
         clearInterval(i);
         $(".loading-page").animate({opacity: 0}, 1000);
+        setTimeout(function(){ 
+            $(".loading-page").hide();
+        }, 1001);
       }
     }, 50);
   });
