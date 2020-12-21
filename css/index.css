@@ -69,6 +69,7 @@ body{
 }
 .gr-bottom a, .gr-bottom h2 {
   display: table;
+  white-space: nowrap;
 }
 .gr-title {
   font-size: 4vh;
