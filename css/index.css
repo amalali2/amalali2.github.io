@@ -259,7 +259,7 @@ main {
   display: flex;
 }
 .p-info {
-  line-height: 1.8pc;
+  line-height: 2.8pc;
 }
 .p-info-left {
   width: 35vw;
@@ -295,6 +295,7 @@ li {
   transition: bottom 0.5s ease-in;
 }
 .project-column {
+  place-content: center;
   position: initial;
   display: flex;
 }
