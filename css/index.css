@@ -1,8 +1,8 @@
 :root {
 font-size: 20px;
   --dark-blue: #fcf0ec;
-  --white-gr: #3B2C80;
-  --black: #E15133;
+  --white-gr: #000;
+  --black: #000;
 }
 a {
   text-decoration: none;
@@ -13,9 +13,7 @@ body{
   color: var(--white-gr);
   background-color: var(--dark-blue);
   overflow-x: hidden;
-  font-family: kansasnew, serif;
-  font-weight: 100;
-  font-style: normal;
+  font-family: 'Nanum Myeongjo', sans-serif;
 }
 .container {
   display: grid;
@@ -42,7 +40,7 @@ body{
   font-size: 3vh;
 }
 .gr-top {
-  font-family: 'Montserrat', serif;
+  font-family: 'DM Sans', serif;
   color: var(--black);
   margin: 0 0 25px 0;
   font-size: 0.9em;
@@ -65,10 +63,11 @@ h1{
 }
 .meta--center {
   justify-self: center;
-  padding-top: 10vh;
+  padding: 10vh 0;
 }
 .meta__links.meta__links--column {
-  font-size: 3vh;
+  font-size: 4vh;
+  line-height: 2em;
 }
 .py-1 {
   width: 35vw;
@@ -335,6 +334,7 @@ li {
 @media only screen and (max-width: 1024px) {
   .gr-bottom {
       font-size: 3vh;
+      display: flex !important;
   }
   .gr-txt {
       padding: 5vw 0 !important;
@@ -363,6 +363,9 @@ li {
       padding: 10vh 2vh;
       display: flex;
   }
+  .p-info-left {
+    width: 100vw;
+  }
   .img-wrap img {
       display: block;
       height: 50vh;
@@ -374,6 +377,10 @@ li {
   .row {
       padding: 0 5vw;
   }
+  .meta__links.meta__links--column {
+    font-size: 3vh;
+    line-height: 2em;
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -391,5 +398,4 @@ li {
   .p-info-left, .p-info-right {
     width: auto;
   }
-   
 }
