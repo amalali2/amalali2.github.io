@@ -9,16 +9,30 @@ a {
   color: inherit;
 }
 
-/**.js-scroll {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
+body{
+  color: var(--eclipse);
+  background-color: var(--rose-white);
+  overflow-x: hidden;
+  font-family: 'Nanum Myeongjo', sans-serif;
+}
+.container {
+  display: grid;
+  padding: 2vw;
+  margin: 0 auto;
+  grid-template-columns: 100%;
+  grid-template-areas:
+      'header'
+      'meta'
+      'grid';
   will-change: transform;
-}**/
+}
 
+.caps {
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.5em;
+  width: 15%;
+}
 .loading-page {
   background-color: var(--black);
   color: var(--rose-white);
@@ -40,26 +54,11 @@ a {
   margin-top:-10px;
 }
 
-
+.js-scroll {
+  margin-top: 10%;
+}
 h2 {margin:0; font-weight: 100;}
 
-body{
-  color: var(--eclipse);
-  background-color: var(--rose-white);
-  overflow-x: hidden;
-  font-family: 'Nanum Myeongjo', sans-serif;
-}
-.container {
-  display: grid;
-  padding: 2vw;
-  margin: 0 auto;
-  grid-template-columns: 100%;
-  grid-template-areas:
-      'header'
-      'meta'
-      'grid';
-  will-change: transform;
-}
 .gr-txt:first-child .gr-bottom {
   font-size: 2.5vw;
   line-height: 2.5vw;
@@ -69,7 +68,6 @@ body{
 }
 .gr-bottom a, .gr-bottom h2 {
   display: table;
-  white-space: nowrap;
 }
 .gr-title {
   font-size: 4vh;
@@ -96,11 +94,19 @@ h1{
 }
 .meta--center {
   justify-self: center;
-  padding: 10vh 0;
+}
+.meta-details {
+    display: flex;
+    line-height: 10vh;
+}
+.meta.meta--links {
+  font-size: 3vh;
 }
 .meta__links.meta__links--column {
-  font-size: 4vh;
+  font-size: 2.5vh;
   line-height: 2em;
+  text-indent: 10vw;
+  text-align: justify;
 }
 .py-1 {
   width: 35vw;
@@ -130,6 +136,10 @@ h1{
   display: flex;
   padding: 5vw;
 }
+.row {
+  display: -ms-flexbox;
+  display: flex;
+}
 .section {
   position: relative;
   width: 100%;
@@ -155,11 +165,9 @@ h1{
 }
 .section-center {
   position: absolute;
-  top: 50%;
   left: 0;
-  width: 100%;
+  width: 80%;
   z-index: 10;
-  transform: translateY(-50%);
 }
 main {
   position: relative;
@@ -367,6 +375,16 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
+  .full-height {
+    height: 65vh;
+  }
+
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+  .gr-bottom a, .gr-bottom h2 {
+    white-space: nowrap;
+}
+}}
   .gr-bottom {
       font-size: 3vh;
       display: flex !important;
@@ -413,9 +431,12 @@ li {
       padding: 0 5vw;
   }
   .meta__links.meta__links--column {
-    font-size: 3vh;
+    font-size: 2vh;
     line-height: 2em;
-}
+  }
+  .section-center {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
