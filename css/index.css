@@ -318,6 +318,7 @@ li {
 }
 .project-column {
   place-content: center;
+  align-items: flex-start;
   position: initial;
   display: flex;
 }
