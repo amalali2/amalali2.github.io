@@ -1,17 +1,28 @@
 :root {
 font-size: 20px;
-  --dark-blue: #fcf0ec;
-  --white-gr: #000;
+  --rose-white: #fcf0ec;
+  --eclipse: #383838;
   --black: #000;
 }
 a {
   text-decoration: none;
-  color: var(--black);
+  color: inherit;
 }
+.js-scroll {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  will-change: transform;
+}
+
 h2 {margin:0; font-weight: 100;}
+
 body{
-  color: var(--white-gr);
-  background-color: var(--dark-blue);
+  color: var(--eclipse);
+  background-color: var(--rose-white);
   overflow-x: hidden;
   font-family: 'Nanum Myeongjo', sans-serif;
 }
@@ -37,14 +48,13 @@ body{
   display: table;
 }
 .gr-title {
-  font-size: 3vh;
+  font-size: 4vh;
 }
 .gr-top {
   font-family: 'DM Sans', serif;
   color: var(--black);
   margin: 0 0 25px 0;
   font-size: 0.9em;
-  justify-content: space-between;
 }
 .gr-top, .gr-bottom {
   display: -webkit-box;
@@ -54,11 +64,10 @@ body{
   padding: 0 0 0 1.75vw;
 }
 .gr-year {
-  width: 7.5vw;
   font-size: 3vh;
+  padding: 0 1.75vw 0.75vw 0;
 }
 h1{
-  font-weight: 900;
   font-size: 12vw;
 }
 .meta--center {
@@ -170,9 +179,9 @@ main {
 .back-btn {
   color: inherit;
   font-size: 3vh;
-  background: var(--white-gr);
-  border: solid var(--white-gr);
-  color: var(--dark-blue);
+  background: var(--eclipse);
+  border: solid var(--eclipse);
+  color: var(--rose-white);
   padding: 1vw;
   margin: 0px;
 }
@@ -180,7 +189,7 @@ main {
   display:none;
 }
 .modal {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   position:fixed;
   overflow: scroll;
   top:0;
@@ -192,7 +201,7 @@ main {
 }
 .modal__wrapper {
   box-shadow: 0 1.75vh 2vh 0 rgba(32,33,34,.4);
-  background-color: var(--dark-blue);
+  background-color: var(--rose-white);
   position: relative;
   margin: 0 auto;
   padding: 10px;
@@ -259,9 +268,9 @@ main {
   width: 53vw;
 }
 .p-info-title {
-  font-weight: 600;
   padding-bottom: 1vw;
   color: var(--black);
+  font-weight: 700;
 }
 .p-info-inline {
   padding-bottom: 3vh;
@@ -315,7 +324,7 @@ li {
   bottom: 0%;
 }
 .project-inner {
-  background-color: var(--dark-blue);
+  background-color: var(--rose-white);
   box-shadow: 0 1.75vh 2vh 0 rgba(32,33,34,.4);
 }   
 .show {
