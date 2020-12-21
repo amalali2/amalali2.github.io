@@ -375,17 +375,11 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
-
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
-    @media {
-      .gr-bottom a, .gr-bottom h2 {
-        white-space: nowrap;
-      }
-    }
+  .gr-bottom a, .gr-bottom h2 {
+      display: block;
   }
-
   .full-height {
-    height: 65vh;
+      height: 65vh;
   }
   .gr-bottom {
       font-size: 3vh;
