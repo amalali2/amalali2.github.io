@@ -42,7 +42,7 @@
 
 // smooth scroll
 
-const body = document.body,
+/**const body = document.body,
       jsScroll = document.getElementsByClassName('js-scroll')[0],
       height = jsScroll.getBoundingClientRect().height - 1,
       speed = 0.05
@@ -59,5 +59,5 @@ function smoothScroll() {
     
     raf = requestAnimationFrame(smoothScroll)
 }
-smoothScroll()
+smoothScroll()**/
 
