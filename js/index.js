@@ -88,7 +88,7 @@ anime({
   direction: 'reverse',
   duration: 3500,
 })
-}, 4500);
+}, 5000);
 
 
 
