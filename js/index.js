@@ -90,6 +90,8 @@ anime({
 })
 }, 4500);
 
+
+
 /**const body = document.body,
       jsScroll = document.getElementsByClassName('js-scroll')[0],
       height = jsScroll.getBoundingClientRect().height - 1,
