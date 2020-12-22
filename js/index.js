@@ -64,6 +64,7 @@ $(document).ready(function() {
 
 
 // img reveal
+
 setTimeout(function(){ 
 anime({
   targets: '.outer',
@@ -89,6 +90,16 @@ anime({
   duration: 3500,
 })
 }, 5000);
+
+// scroll to bottom
+
+$('nav.name').click(function(){
+
+  var WH = $(window).height();  
+  var SH = $('body').prop("scrollHeight");
+  $('html, body').stop().animate({scrollTop: SH-WH}, 1000);
+
+}); 
 
 
 
