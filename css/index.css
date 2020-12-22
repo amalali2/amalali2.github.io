@@ -9,7 +9,7 @@ a {
   color: inherit;
 }
 
-nav {
+nav.name {
   padding: 1em 9vh;
   font-size: 1.5em;
   position: -webkit-sticky;
