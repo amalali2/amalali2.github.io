@@ -10,8 +10,8 @@ a {
 }
 
 nav.name {
-  padding: 1em 9vh;
-  font-size: 1.5em;
+  padding: 1em 7vh;
+  font-size: 4.5em;
   position: -webkit-sticky;
   text-transform: uppercase;
   position: sticky;
@@ -444,8 +444,8 @@ li {
 @media only screen and (max-width: 1024px) {
   nav.name {
     padding: 1em 4vh;
-    font-size: 0.7em;
-}
+    font-size: 2.7em;
+  }
   .gr-bottom a, .gr-bottom h2 {
       display: block;
   }
@@ -455,6 +455,9 @@ li {
   .gr-bottom {
       font-size: 3vh;
       display: flex !important;
+  }
+  .gr-top {
+    font-size: 0.6em;
   }
   .gr-txt {
       padding: 5vw 0 !important;
@@ -507,6 +510,10 @@ li {
 }
 
 @media only screen and (max-width: 767px) {
+  nav.name {
+    padding: 1em 1vh;
+    font-size: 2.7em;
+  }
   .gr-year {
     width: 32vw;
   }
