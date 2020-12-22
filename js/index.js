@@ -63,7 +63,32 @@ $(document).ready(function() {
   });
 
 
-// smooth scroll
+// img reveal
+setTimeout(function(){ 
+anime({
+  targets: '.outer',
+  translateY: '-100%',
+  direction: 'reverse',
+  duration: 3000,
+  easing: 'easeInOutCubic',
+})
+
+anime({
+  targets: '.inner',
+  translateY: '100%',
+  direction: 'reverse',
+  duration: 3000,
+  easing: 'easeInOutCubic',
+})
+
+anime({
+  targets: '.image',
+  scale: 2,
+  easing: 'easeInOutQuad',
+  direction: 'reverse',
+  duration: 3500,
+})
+}, 4500);
 
 /**const body = document.body,
       jsScroll = document.getElementsByClassName('js-scroll')[0],
