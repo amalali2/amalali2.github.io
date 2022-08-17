@@ -474,8 +474,8 @@ li {
       display: block;
   }
   .py-1, .py-2, .py-3, .py-4, .py-5 {
-      width: auto;
-      padding: 1vh;
+      width: auto !important;
+      padding: 1vh !important;
   }
   .py-5 .gr-txt {
       width: auto;
