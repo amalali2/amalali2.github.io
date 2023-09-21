@@ -78,6 +78,7 @@ nav.name {
   width: 100%;
   transform: scale(1);
   overflow: hidden;
+  border-radius: 16px;
 }
 
 body{
