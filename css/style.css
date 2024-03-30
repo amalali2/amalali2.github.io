@@ -1,0 +1,185 @@
+@font-face {
+    font-family:  "Mazius Review";
+    font-style: italic;
+    src:  url(/css/maziusreview20.09-extraitalic.woff2);
+  }
+  
+  @font-face {
+    font-family:  "Mazius Review";
+    font-style: normal;
+    src:  url(/css/maziusreview20.09-regular.woff2);
+  }
+  
+  @keyframes hyphen {
+    0% { 
+        width: 0.5em;
+    }
+    20% {
+      width: 0.5em;
+    }
+    80% {
+      width: 1em;
+    }
+  }
+  
+  @keyframes header-in {
+    0% { 
+        opacity: 0;
+      transform: translate(0, 24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  body {
+      font-family: Mazius Review;
+      font-size: 45px;
+      line-height: 1.25;
+    margin-top: 100vh;
+      
+      background-color: #ffffff;
+      color: #000000;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    z-index: 0;
+    
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+    
+    animation: header-in 0.4s 1s backwards;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 10vw;
+    font-style: italic;
+    padding: 0 30px 0 30px;
+  }
+  
+  h2 {
+    max-width: 580px;
+    font-size: 32px;
+  }
+  
+  header span {
+    display: inline-block;
+    width: 1em;
+    height: 0.02em;
+    vertical-align: middle;
+    background-color: #000000;
+    border-radius: 40px;
+    animation: hyphen 2s 1s alternate infinite cubic-bezier(0.86,0,0.07,1);
+  }
+  
+  img.arrow {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  section {
+    position: relative;
+    z-index: 2;
+    
+    background-color: #f4f1e7;
+    padding: 200px 40px 200px 40px;
+  }
+  
+  section.light {
+    background-color: #666666;
+    color: #ffffff;
+  }
+  
+  figure {
+    max-width: 980px;
+    margin: 0 auto 0 auto;
+  }
+
+  figure img {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+   }
+  
+  figcaption {
+    margin: 24px 0% 0 0;
+    text-transform: none;
+    text-underline-position: under;
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+  
+  circle, path {
+    transition: transform 1.5s cubic-bezier(0.55,0.08,0.68,0.53);
+    transform: scale(0);
+  }
+  
+  circle.in-view, path.in-view {
+    transform: scale(1);
+    transition: transform 3s cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  
+  g.wave g:nth-child(2) circle, g.wave g:nth-child(2) path {
+    transition-delay: 0.1s;
+  }
+  
+  g.wave g:nth-child(3) circle, g.wave g:nth-child(3) path  {
+    transition-delay: 0.2s;
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #f4f1e7;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000; 
+  }
+
+  .meta-details {
+    display: flex;
+    line-height: 10vh;
+   }
+
+   .meta-details a {
+    color: #000 !important;
+    font-family: monospace;
+   }
+
+   figure.meta.meta--links {
+    z-index: 9;
+    display: block;
+    position: relative;
+   }
+
+    .caps {
+        text-transform: uppercase;
+        font-size: 0.5em;
+        width: 15%;
+    }
+  
