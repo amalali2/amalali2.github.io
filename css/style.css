@@ -70,6 +70,7 @@
   h2 {
     max-width: 580px;
     font-size: 32px;
+    padding: 0 10px;
   }
   
   header span {
@@ -164,22 +165,24 @@
   .meta-details {
     display: flex;
     line-height: 10vh;
+    gap: .2em;
    }
 
    .meta-details a {
     color: #000 !important;
     font-family: monospace;
+    font-size: 0.55em;
    }
 
    figure.meta.meta--links {
     z-index: 9;
     display: block;
     position: relative;
+    padding: 0px 40px 0px 40px;
    }
 
     .caps {
         text-transform: uppercase;
-        font-size: 0.5em;
-        width: 15%;
+        font-size: 0.4em;
     }
   
