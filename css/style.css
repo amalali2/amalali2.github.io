@@ -72,6 +72,16 @@
     font-size: 32px;
     padding: 0 10px;
   }
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 16vw !important;
+    }
+  
+    h2 {
+      font-size: 26px !important;
+    }
+  }
   
   header span {
     display: inline-block;
